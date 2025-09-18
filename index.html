@@ -1,0 +1,1691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Airbnb</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+<!-- Navbar start -->
+<header class="bg-white shadow-md  top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-20">
+      
+      <!-- Logo -->
+      <div class="flex items-center space-x-4">
+        <img src="./airbnb logo.png" alt="Airbnb" class="h-12 w-24">
+      </div>
+
+      <!-- Nav Links -->
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="#" class="flex flex-col items-center group relative">
+          <img src="./home logo of navbar.png" class="w-6 h-6" />
+          <span class="text-sm font-medium text-black group-hover:text-black">Homes</span>
+          <span class="absolute -bottom-1 w-11 h-[2px] bg-black rounded-full group-hover:bg-black"></span>
+        </a>
+
+        <a href="./experiences.html" class="flex flex-col items-center group relative">
+          <div class="relative">
+            <img src="./experiences logo of navbar.png" class="w-8 h-8" />
+            <span class="absolute -top-2 -right-2 bg-gray-500 text-white text-[10px] px-1 rounded-full">NEW</span>
+          </div>
+          <span class="text-sm font-medium text-gray-500 group-hover:text-black">Experiences</span>
+          <span class="absolute -bottom-1 w-16 h-[2px] bg-black  group-hover:bg-black"></span>
+        </a>
+
+        <a href="./services.html" class="flex flex-col items-center group relative">
+          <div class="relative">
+            <img src="https://img.icons8.com/emoji/32/bellhop-bell.png" class="w-6 h-6" />
+            <span class="absolute -top-2 -right-2 bg-gray-500 text-white text-[10px] px-1 rounded-full">NEW</span>
+          </div>
+          <span class="text-sm font-medium text-gray-500 group-hover:text-black">Services</span>
+          <span class="absolute -bottom-1 w-12 h-[2px] bg-black  group-hover:bg-black"></span>
+        </a>
+      </nav>
+
+      <!-- Right Controls -->
+      <div class="flex items-center gap-4">
+        <a href="#" class="text-sm font-medium hover:bg-gray-100 px-3 py-2 rounded-full hidden md:block">Become a host</a>
+        <button class="p-2 bg-gray-100 rounded-full hover:bg-gray-200">
+          <svg class="w-5 h-5 text-gray-600" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm3.89 11.06a6 6 0 01-7.78 0 1 1 0 011.2-1.6 4 4 0 005.38 0 1 1 0 011.2 1.6zM10 10a2 2 0 110-4 2 2 0 010 4z" /></svg>
+        </button>
+        <button class="p-2 bg-gray-100 rounded-full hover:bg-gray-200">
+          <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Search Bar -->
+  <div class="px-72  justify-center py-7">
+    <div class="bg-white border-2 rounded-full  shadow-md flex items-center px-12 py-4 space-x-4 w-full ">
+      <div class="text-left px-4 border-r">
+        <p class="text-xs font-bold">Where</p>
+        <p class="text-sm text-gray-500">Search destinations</p>
+      </div>
+      <div class="text-left px-4 border-r">
+        <p class="text-xs font-bold">Check in</p>
+        <p class="text-sm text-gray-500">Add dates</p>
+      </div>
+      <div class="text-left px-4 border-r">
+        <p class="text-xs font-bold">Check out</p>
+        <p class="text-sm text-gray-500">Add dates</p>
+      </div>
+      <div class="text-left px-4">
+        <p class="text-xs font-bold">Who</p>
+        <p class="text-sm text-gray-500">Add guests</p>
+      </div>
+      <button class="bg-rose-500 text-white p-2 w-10 rounded-full hover:bg-rose-600">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        
+      </button>
+    </div>
+  </div>
+</header>
+<!-- navbar end -->
+ <!-- Popular homes in Islamabad start -->
+ <section class="px-10 py-10">
+  <!-- Title + Arrows -->
+ <div class="flex justify-between items-center mb-5">
+  <!-- Title + icon together -->
+  <div class="flex items-center gap-3">
+    <h2 class="text-2xl font-bold">Popular Homes In Islamabad</h2>
+    <i class="fa-solid fa-right-from-bracket text-xl text-black mt-2"></i>
+  </div>
+
+  <!-- Arrows -->
+  <div class="flex gap-2">
+    <!-- Left Arrow -->
+    <button id="prevBtn" class="p-2 bg-white border rounded-full shadow hover:shadow-md disabled:opacity-30">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+    </button>
+    <!-- Right Arrow -->
+    <button id="nextBtn" class="p-2 bg-white border rounded-full shadow hover:shadow-md">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+    </button>
+  </div>
+</div>
+
+
+  <!-- Cards Container -->
+  <div id="cardSlider" class="flex gap-4 overflow-x-auto scrollbar-hidden">
+
+    <!-- Card 1 -->
+    <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./apartment in islamabad img 1.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <a href="./apartment in islamabad.html"><h3 class="text-sm font-medium">Apartment in Islamabad</h3></a>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+    
+
+    <!-- Card 2 -->
+   <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./apartment in islamabad img 2.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Apartment in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+   <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./home in islamabad img 1.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Home in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./apartment in islamabad img 3.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Apartment in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+  <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./apartment in islamabad img 4.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Apartment in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+   <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./apartment in islamabad img 5.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Apartment in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- Popular homes in Islamabad end -->
+  <!-- available in rawalpindi this weekend start -->
+ <section class="px-10 py-5">
+  <!-- Title + Arrows -->
+ <div class="flex justify-between items-center mb-5">
+  <!-- Title + icon together -->
+  <div class="flex items-center gap-3">
+    <h2 class="text-2xl font-bold">Available In Rawalpindi This Weekend</h2>
+    <i class="fa-solid fa-right-from-bracket text-xl text-black mt-2"></i>
+  </div>
+
+  <!-- Arrows -->
+  <div class="flex gap-2">
+    <!-- Left Arrow -->
+    <button id="prevBtn" class="p-2 bg-white border rounded-full shadow hover:shadow-md disabled:opacity-30">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+    </button>
+    <!-- Right Arrow -->
+    <button id="nextBtn" class="p-2 bg-white border rounded-full shadow hover:shadow-md">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+    </button>
+  </div>
+</div>
+
+
+  <!-- Cards Container -->
+  <div id="cardSlider" class="flex gap-4 overflow-x-auto ">
+
+    <!-- Card 1 -->
+    <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./apartment in rawalpindi img 1.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Apartment in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+    
+
+    <!-- Card 2 -->
+   <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./apartment in rawalpindi img 2.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Apartment in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+   <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./apartment in rawalpindi img 3.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Home in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./apartment in rawalpindi img 4.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Apartment in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+  <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./apartment in rawalpindi img 5.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Apartment in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+   <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./condo in rawalpindi img 1.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Apartment in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- available in rawalpindi this weekend end -->
+   <!-- stay in karachi start -->
+ <section class="px-10 py-5">
+  <!-- Title + Arrows -->
+ <div class="flex justify-between items-center mb-5">
+  <!-- Title + icon together -->
+  <div class="flex items-center gap-3">
+    <h2 class="text-2xl font-bold">Stay In Karachi</h2>
+    <i class="fa-solid fa-right-from-bracket text-xl text-black mt-2"></i>
+  </div>
+
+  <!-- Arrows -->
+  <div class="flex gap-2">
+    <!-- Left Arrow -->
+    <button id="prevBtn" class="p-2 bg-white border rounded-full shadow hover:shadow-md disabled:opacity-30">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+    </button>
+    <!-- Right Arrow -->
+    <button id="nextBtn" class="p-2 bg-white border rounded-full shadow hover:shadow-md">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+    </button>
+  </div>
+</div>
+
+
+  <!-- Cards Container -->
+  <div id="cardSlider" class="flex gap-4 overflow-x-auto ">
+
+    <!-- Card 1 -->
+    <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./apartment in karachi img 1.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Apartment in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+    
+
+    <!-- Card 2 -->
+   <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./condo in karachi img 1.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Apartment in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+   <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./apartment in karachi img 2.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Home in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./room in karachi img 1.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Apartment in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+  <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./room in karachi img 2.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Apartment in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+   <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./room in karachi img 3.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Apartment in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- stay in karachi end -->
+ <!-- Available in murree this weekend start -->
+ <section class="px-10 py-5">
+  <!-- Title + Arrows -->
+ <div class="flex justify-between items-center mb-5">
+  <!-- Title + icon together -->
+  <div class="flex items-center gap-3">
+    <h2 class="text-2xl font-bold">Available In Murree This Weekend</h2>
+    <i class="fa-solid fa-right-from-bracket text-xl text-black mt-2"></i>
+  </div>
+
+  <!-- Arrows -->
+  <div class="flex gap-2">
+    <!-- Left Arrow -->
+    <button id="prevBtn" class="p-2 bg-white border rounded-full shadow hover:shadow-md disabled:opacity-30">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+    </button>
+    <!-- Right Arrow -->
+    <button id="nextBtn" class="p-2 bg-white border rounded-full shadow hover:shadow-md">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+    </button>
+  </div>
+</div>
+
+
+  <!-- Cards Container -->
+  <div id="cardSlider" class="flex gap-4 overflow-x-auto ">
+
+    <!-- Card 1 -->
+    <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./apartment in murree img 1.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Apartment in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+    
+
+    <!-- Card 2 -->
+   <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./apartment in murree img 2.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Apartment in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+   <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./apartment in jhika gali img 1.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Home in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./apartment in ghora gali img 1.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Apartment in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+  <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./apartment in murree img 3.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Apartment in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+   <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./apartment in murree img 4.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Apartment in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- Available in murree this weekend end -->
+ <!-- homes in nathia gali start -->
+ <section class="px-10 py-5">
+  <!-- Title + Arrows -->
+ <div class="flex justify-between items-center mb-5">
+  <!-- Title + icon together -->
+  <div class="flex items-center gap-3">
+    <h2 class="text-2xl font-bold">Homes In Nathia Gali</h2>
+    <i class="fa-solid fa-right-from-bracket text-xl text-black mt-2"></i>
+  </div>
+
+  <!-- Arrows -->
+  <div class="flex gap-2">
+    <!-- Left Arrow -->
+    <button id="prevBtn" class="p-2 bg-white border rounded-full shadow hover:shadow-md disabled:opacity-30">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+    </button>
+    <!-- Right Arrow -->
+    <button id="nextBtn" class="p-2 bg-white border rounded-full shadow hover:shadow-md">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+    </button>
+  </div>
+</div>
+
+
+  <!-- Cards Container -->
+  <div id="cardSlider" class="flex gap-4 overflow-x-auto ">
+
+    <!-- Card 1 -->
+    <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./condo in murre img 1.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Apartment in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+    
+
+    <!-- Card 2 -->
+   <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./home in murre img 1.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Apartment in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+   <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./loft in dunga gali img 1.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Home in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="apartment in dunga gali img 1.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Apartment in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+  <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./apartment in murree img 5.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Apartment in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+   <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./condo in nathia gali img 1.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Apartment in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- homes in nathia gali end -->
+ <!-- available next month in dubai start -->
+ <section class="px-10 py-5">
+  <!-- Title + Arrows -->
+ <div class="flex justify-between items-center mb-5">
+  <!-- Title + icon together -->
+  <div class="flex items-center gap-3">
+    <h2 class="text-2xl font-bold">Available Next Month In Dubai</h2>
+    <i class="fa-solid fa-right-from-bracket text-xl text-black mt-2"></i>
+  </div>
+
+  <!-- Arrows -->
+  <div class="flex gap-2">
+    <!-- Left Arrow -->
+    <button id="prevBtn" class="p-2 bg-white border rounded-full shadow hover:shadow-md disabled:opacity-30">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+    </button>
+    <!-- Right Arrow -->
+    <button id="nextBtn" class="p-2 bg-white border rounded-full shadow hover:shadow-md">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+    </button>
+  </div>
+</div>
+
+
+  <!-- Cards Container -->
+  <div id="cardSlider" class="flex gap-4 overflow-x-auto ">
+
+    <!-- Card 1 -->
+    <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./apartment in marsa dubai img 1.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Apartment in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+    
+
+    <!-- Card 2 -->
+   <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./apartment in marsa dubai img 2.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Apartment in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+   <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./apartment in downtown dubai img 1.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Home in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./apartment in marsa dubai img 3.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Apartment in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+  <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./apartment in downtown dubai img 2.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Apartment in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+   <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./guest suit in AI jafiliya.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Apartment in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- available next month in dubai end -->
+ <!-- Places to stay in london start -->
+ <section class="px-10 py-5">
+  <!-- Title + Arrows -->
+ <div class="flex justify-between items-center mb-5">
+  <!-- Title + icon together -->
+  <div class="flex items-center gap-3">
+    <h2 class="text-2xl font-bold">Places To Stay In London</h2>
+    <i class="fa-solid fa-right-from-bracket text-xl text-black mt-2"></i>
+  </div>
+
+  <!-- Arrows -->
+  <div class="flex gap-2">
+    <!-- Left Arrow -->
+    <button id="prevBtn" class="p-2 bg-white border rounded-full shadow hover:shadow-md disabled:opacity-30">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+    </button>
+    <!-- Right Arrow -->
+    <button id="nextBtn" class="p-2 bg-white border rounded-full shadow hover:shadow-md">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+    </button>
+  </div>
+</div>
+
+
+  <!-- Cards Container -->
+  <div id="cardSlider" class="flex gap-4 overflow-x-auto ">
+
+    <!-- Card 1 -->
+    <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./room in london img 1.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Apartment in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+    
+
+    <!-- Card 2 -->
+   <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./room in twickenham img 1.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Apartment in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+   <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./room in london img 2.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Home in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./place to stay in popular img 1.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Apartment in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+  <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./place to stay in london img 1.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Apartment in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+   <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./place to stay in london img 2.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Apartment in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- Places to stay in london end -->
+ <!-- check out homes in kuala lampur start -->
+ <section class="px-10 py-5">
+  <!-- Title + Arrows -->
+ <div class="flex justify-between items-center mb-5">
+  <!-- Title + icon together -->
+  <div class="flex items-center gap-3">
+    <h2 class="text-2xl font-bold">Check Out Homes In Kuala Lampur</h2>
+    <i class="fa-solid fa-right-from-bracket text-xl text-black mt-2"></i>
+  </div>
+
+  <!-- Arrows -->
+  <div class="flex gap-2">
+    <!-- Left Arrow -->
+    <button id="prevBtn" class="p-2 bg-white border rounded-full shadow hover:shadow-md disabled:opacity-30">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+    </button>
+    <!-- Right Arrow -->
+    <button id="nextBtn" class="p-2 bg-white border rounded-full shadow hover:shadow-md">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+    </button>
+  </div>
+</div>
+
+
+  <!-- Cards Container -->
+  <div id="cardSlider" class="flex gap-4 overflow-x-auto ">
+
+    <!-- Card 1 -->
+    <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./apartment in bukit bintang img 1.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Apartment in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+    
+
+    <!-- Card 2 -->
+   <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./condo in setiawangsa img 1.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Apartment in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+   <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./place to stay in bukit bintang img 1.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Home in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./apartment in kampung bahru img 1.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Apartment in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+  <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./apartment in bukit bintang img 2.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Apartment in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+   <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./condo in bukit bintang img 1.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Apartment in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- check out homes in kuala lampur end -->
+ <!-- Popular homes in multan start -->
+ <section class="px-10 py-5">
+  <!-- Title + Arrows -->
+ <div class="flex justify-between items-center mb-5">
+  <!-- Title + icon together -->
+  <div class="flex items-center gap-3">
+    <h2 class="text-2xl font-bold">Popular Homes In Multan</h2>
+    <i class="fa-solid fa-right-from-bracket text-xl text-black mt-2"></i>
+  </div>
+
+  <!-- Arrows -->
+  <div class="flex gap-2">
+    <!-- Left Arrow -->
+    <button id="prevBtn" class="p-2 bg-white border rounded-full shadow hover:shadow-md disabled:opacity-30">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+    </button>
+    <!-- Right Arrow -->
+    <button id="nextBtn" class="p-2 bg-white border rounded-full shadow hover:shadow-md">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+    </button>
+  </div>
+</div>
+
+
+  <!-- Cards Container -->
+  <div id="cardSlider" class="flex gap-4 overflow-x-auto ">
+
+    <!-- Card 1 -->
+    <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./home in multan img 1.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Apartment in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+    
+
+    <!-- Card 2 -->
+   <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./apartment in multan img 1.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Apartment in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+   <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./home in multan img 2.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Home in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./home in multan img 3.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Apartment in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+  <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./guesthouse in multan img 1.webp" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Apartment in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+   <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./home in multan img 4.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Guest favorite</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-sm font-medium">Apartment in Islamabad</h3>
+        <p class="text-[12px] text-gray-600">$137 for 2 nights • ★ 4.93</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- Popular homes in multan end -->
+ <!-- Inspiration for future getaways start -->
+ <section class="bg-gray-100 px-10 py-10">
+  <!-- Heading -->
+  <h2 class="text-2xl font-semibold mb-6">Inspiration for future getaways</h2>
+
+  <!-- buttons -->
+  <div class="flex flex-wrap gap-6 border-b border-gray-300 pb-3 mb-6 text-sm font-medium">
+    <button class="text-gray-600 hover:text-black hover:underline">Unique stays</button>
+    <button class="text-gray-600 hover:text-black hover:underline">Categories</button>
+    <button class="text-gray-600 hover:text-black hover:underline">Travel tips & inspiration</button>
+    <button class="text-gray-600 hover:text-black hover:underline">Airbnb-friendly apartments</button>
+  </div>
+
+  <!-- Grid -->
+  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-y-6 text-sm">
+    <div>
+      <a href="./cabins.html"><h3 class="font-semibold">Cabins</h3></a>
+      <p class="text-gray-500">United States</p>
+    </div>
+    <div>
+      <a href="./treehouses.html"><h3 class="font-semibold">Treehouses</h3></a>
+      <p class="text-gray-500">United States</p>
+    </div>
+    <div>
+      <h3 class="font-semibold">Glamping</h3>
+      <p class="text-gray-500">United States</p>
+    </div>
+    <div>
+      <h3 class="font-semibold">Tiny Houses</h3>
+      <p class="text-gray-500">United States</p>
+    </div>
+    <div>
+      <h3 class="font-semibold">Beach Houses</h3>
+      <p class="text-gray-500">United States</p>
+    </div>
+    <div>
+      <h3 class="font-semibold">Campers and RVs</h3>
+      <p class="text-gray-500">United States</p>
+    </div>
+    <div>
+      <h3 class="font-semibold">Lakehouses</h3>
+      <p class="text-gray-500">United States</p>
+    </div>
+    <div>
+      <h3 class="font-semibold">Yurt Rentals</h3>
+      <p class="text-gray-500">United States</p>
+    </div>
+    <div>
+      <h3 class="font-semibold">Yurt Rentals</h3>
+      <p class="text-gray-500">United Kingdom</p>
+    </div>
+    <div>
+      <h3 class="font-semibold">Castle Rentals</h3>
+      <p class="text-gray-500">United States</p>
+    </div>
+    <div>
+      <h3 class="font-semibold">Private Island Rentals</h3>
+      <p class="text-gray-500">United States</p>
+    </div>
+    <div>
+      <h3 class="font-semibold">Farm Houses</h3>
+      <p class="text-gray-500">United States</p>
+    </div>
+    <div>
+      <h3 class="font-semibold">Farm Cottages</h3>
+      <p class="text-gray-500">United Kingdom</p>
+    </div>
+    <div>
+      <h3 class="font-semibold">Cabin Rentals</h3>
+      <p class="text-gray-500">Australia</p>
+    </div>
+    <div>
+      <h3 class="font-semibold">Luxury Cabins</h3>
+      <p class="text-gray-500">United Kingdom</p>
+    </div>
+    <div>
+      
+    </div>
+  </div>
+  
+</section>
+ <!-- Inspiration for future getaways end -->
+  <!-- footer start -->
+<footer class="bg-gray-100 text-sm text-gray-800">
+  <div class="max-w-7xl mx-auto px-11 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+    
+    <!-- Support Section -->
+    <div>
+      <h4 class="font-semibold mb-4">Support</h4>
+      <ul class="space-y-2">
+        <li><a href="./help center.html" class="hover:underline">Help Center</a></li>
+        <li><span class="text-gray-500">AirCover</span></li>
+        <li><a href="#" class="hover:underline">Anti-discrimination</a></li>
+        <li><a href="#" class="hover:underline">Disability support</a></li>
+        <li><a href="#" class="hover:underline">Cancellation options</a></li>
+        <li><a href="#" class="hover:underline">Report neighborhood concern</a></li>
+      </ul>
+    </div>
+
+    <!-- Hosting Section -->
+    <div>
+      <h4 class="font-semibold mb-4">Hosting</h4>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:underline">Airbnb your home</a></li>
+        <li><a href="./airbnb your experience.html" class="hover:underline">Airbnb your experience</a></li>
+        <li><a href="#" class="hover:underline">Airbnb your service</a></li>
+        <li><a href="#" class="hover:underline">AirCover for Hosts</a></li>
+        <li><a href="#" class="hover:underline">Hosting resources</a></li>
+        <li><a href="#" class="hover:underline">Community forum</a></li>
+        <li><a href="#" class="hover:underline">Hosting responsibly</a></li>
+        <li><a href="#" class="hover:underline">Airbnb-friendly apartments</a></li>
+        <li><a href="#" class="hover:underline">Join a free Hosting class</a></li>
+        <li><a href="#" class="hover:underline">Find a co-host</a></li>
+      </ul>
+    </div>
+
+    <!-- Airbnb Section -->
+    <div>
+      <h4 class="font-semibold mb-4">Airbnb</h4>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:underline">2025 Summer Release</a></li>
+        <li><a href="#" class="hover:underline">Newsroom</a></li>
+        <li><a href="#" class="hover:underline">Careers</a></li>
+        <li><a href="#" class="hover:underline">Investors</a></li>
+        <li><a href="#" class="hover:underline">Gift cards</a></li>
+        <li><a href="#" class="hover:underline">Airbnb.org emergency stays</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bottom Footer -->
+  <div class="border-t border-gray-300 py-5 text-center text-xs px-4">
+    <p class="mb-2">
+      @ 2025 Airbnb, Inc.  
+      <a href="#" class="hover:underline">Terms.</a>  
+      <a href="#" class="hover:underline">Sitemap.</a>  
+      <a href="#" class="hover:underline">Privacy.</a>  
+      <a href="#" class="hover:underline">Your Privacy Choices.</a>
+    </p>
+  </div>
+</footer>
+<!-- footer end -->
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Apartment Listing</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-white text-gray-800 font-sans">
+    <!-- navbar start-->
+<header class="bg-white shadow-md z-50">
+  <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+    <!-- Top Bar: Logo + Search + Controls -->
+    <div class="flex justify-between items-center h-24">
+      
+      <!-- Logo -->
+      <div class="flex items-center space-x-4">
+        <img src="./airbnb logo.png" alt="Airbnb" class="h-12 w-24">
+      </div>
+
+      <!-- Search Bar -->
+      <div class="hidden md:flex bg-white border-2 rounded-full shadow-md px-2 py-3 items-center space-x-4 w-full max-w-xl mx-10">
+        <div class="text-left px-4 border-r">
+          <p class="text-xs font-bold">Where</p>
+          <p class="text-sm text-gray-500">Search destinations</p>
+        </div>
+        <div class="text-left px-4 border-r">
+          <p class="text-xs font-bold">Check in</p>
+          <p class="text-sm text-gray-500">Add dates</p>
+        </div>
+        <div class="text-left px-4 border-r">
+          <p class="text-xs font-bold">Check out</p>
+          <p class="text-sm text-gray-500">Add dates</p>
+        </div>
+        <div class="text-left px-4">
+          <p class="text-xs font-bold">Who</p>
+          <p class="text-sm text-gray-500">Add guests</p>
+        </div>
+        <button class="bg-rose-500 text-white w-8 h-8 rounded-full hover:bg-rose-600">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+
+      <!-- Right Controls -->
+      <div class="flex items-center gap-4">
+        <a href="#" class="text-sm font-medium hover:bg-gray-100 px-3 py-2 rounded-full hidden md:block">Become a host</a>
+        <button class="p-2 bg-gray-100 rounded-full hover:bg-gray-200">
+          <svg class="w-5 h-5 text-gray-600" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm3.89 11.06a6 6 0 01-7.78 0 1 1 0 011.2-1.6 4 4 0 005.38 0 1 1 0 011.2 1.6zM10 10a2 2 0 110-4 2 2 0 010 4z" /></svg>
+        </button>
+        <button class="p-2 bg-gray-100 rounded-full hover:bg-gray-200">
+          <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+ <!-- navbar end -->
+  <!-- Container -->
+  <div class="max-w-6xl mx-auto p-10 relative">
+    
+    <!-- Title + Share/Save Buttons -->
+    <div class="flex justify-between items-start">
+      <h1 class="text-3xl font-semibold max-w-3xl">Apartment in a Comfy & Cozy House@ Islamabad (007)</h1>
+
+      <!-- Share & Save Buttons -->
+      <div class="flex gap-4">
+        <button class="flex items-center text-sm text-gray-600 hover:text-black">
+          <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v16h16V4H4zm4 4h8v8H8V8z" />
+          </svg>
+          Share
+        </button>
+        <button class="flex items-center text-sm text-gray-600 hover:text-black">
+          <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+          </svg>
+          Save
+        </button>
+      </div>
+    </div>
+
+    <!-- Image Gallery -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-0 mt-8">
+      <!-- Main Image (Smaller Height) -->
+      <div class="md:col-span-2">
+        <img src="./home in islamabad img 1.avif" alt="Living Room"
+             class="w-[650px] h-[340px] object-cover rounded-lg shadow" />
+      </div>
+
+      <!-- Side Images (Slightly Larger) -->
+      <div class="grid grid-cols-2 gap-2">
+        <img src="./entire home in islamabad img 1.avif" alt="Lounge"
+             class="w-full h-44 object-cover rounded-lg" />
+        <img src="./entire home in islamabad img 2.avif" alt="Exterior"
+             class="w-full h-44 object-cover rounded-lg" />
+        <img src="./entire home in islamabad img 3.avif" alt="Bedroom"
+             class="w-full h-44 object-cover rounded-lg" />
+        <div class="relative">
+          <img src="./entire home in islamabad img 4.avif" alt="Garden"
+               class="w-full h-44 object-cover rounded-lg" />
+          <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center text-white text-sm font-semibold rounded-lg">
+            Show all photos
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Info Section -->
+    <div class="mt-6">
+      <p class="text-lg font-medium">Entire home in Islamabad, Pakistan</p>
+      <p class="text-gray-600">4 guests · 1 bedroom · 1 bed · 1 bath</p>
+    </div>
+
+   
+
+  </div>
+
+</body>
+</html>

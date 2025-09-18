@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Navbar start -->
+<nav class="flex items-center justify-between px-12 py-4 shadow-sm">
+  <!-- Left: Logo -->
+  <div class="flex items-center space-x-2">
+    <img src="./airbnb logo.png" alt="Airbnb Logo" class="h-10 w-25">
+  </div>
+
+  <!-- Center: Search Box -->
+  <div class="hidden md:flex items-center shadow-md rounded-full overflow-hidden border border-gray-200">
+    <div class="px-4 py-2 flex items-center space-x-2 hover:bg-gray-100 cursor-pointer">
+      
+      <span class="text-sm font-medium">Anywhere</span>
+    </div>
+    <div class="border-l h-6"></div>
+    <div class="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+      <span class="text-sm font-medium">Any week</span>
+    </div>
+    <div class="border-l h-6"></div>
+    <div class="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+      <span class="text-sm font-medium">Add guests</span>
+    </div>
+    <div class="px-3 py-2">
+      <button class="bg-rose-500 text-white p-2 w-10 rounded-full hover:bg-rose-600">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        
+      </button>
+    </div>
+  </div>
+
+  <!-- Right: Options -->
+  <div class="flex items-center space-x-4">
+   
+   
+    <button class="bg-gray-100 p-2 rounded-full">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+</nav>
+<!-- navbar end -->
+<!-- left imges start -->
+<div class="grid grid-cols-2 gap-4 px-12 py-10 max-w-xl">
+  <!-- Image 1 -->
+  <img src="./make up artisit img 1.avif" alt="Makeup in action" class="w-full h-auto rounded-2xl object-cover" />
+  
+  <!-- Image 2 -->
+  <img src="./make up artisit img 2.avif" alt="Makeup artist portrait" class="w-full h-auto rounded-2xl object-cover" />
+  
+  <!-- Image 3 -->
+  <img src="./make up artisit img 3.avif" alt="Eye makeup closeup" class="w-full h-auto rounded-2xl object-cover" />
+  
+  <!-- Image 4 -->
+  <img src="./make up artisit img 4.webp" alt="Lollapalooza sign" class="w-full h-auto rounded-2xl object-cover" />
+</div>
+<!-- left imges end -->
+ <!-- What you’ll do start -->
+ <div class="max-w-2xl mx-12 px-4 py-8">
+  <!-- Section Heading -->
+  <h2 class="text-2xl font-semibold mb-6">What you’ll do</h2>
+
+  <!-- Step 1 -->
+  <div class="flex items-start space-x-4 mb-6">
+    <img src="./what you'll do img 1.webp" alt="Pick up your ticket" class="w-20 h-20 rounded-xl object-cover">
+    <div>
+      <h3 class="font-semibold text-lg">Pick up your ticket</h3>
+      <p class="text-gray-600">We’ll include a Regular Day Ticket with this experience.</p>
+    </div>
+  </div>
+
+  <!-- Step 2 -->
+  <div class="flex items-start space-x-4 mb-6">
+    <img src="./what you'll do img 2.avif" alt="Meet in the lounge" class="w-20 h-20 rounded-xl object-cover">
+    <div>
+      <h3 class="font-semibold text-lg">Meet in the lounge</h3>
+      <p class="text-gray-600">I’ll set the tone and share stories from the red carpet.</p>
+    </div>
+  </div>
+
+  <!-- Step 3 -->
+  <div class="flex items-start space-x-4 mb-6">
+    <img src="./what you'll do img 3.avif" alt="Add shimmer" class="w-20 h-20 rounded-xl object-cover">
+    <div>
+      <h3 class="font-semibold text-lg">Add shimmer</h3>
+      <p class="text-gray-600">We’ll pick out gems and colors to make you sparkle.</p>
+    </div>
+  </div>
+
+  <!-- Step 4 -->
+  <div class="flex items-start space-x-4">
+    <img src="./what you'll do img 4.avif" alt="Strike a pose" class="w-20 h-20 rounded-xl object-cover">
+    <div>
+      <h3 class="font-semibold text-lg">Strike a pose</h3>
+      <p class="text-gray-600">Capture your glam in a red-carpet photo moment.</p>
+    </div>
+  </div>
+</div>
+ <!-- What you’ll do end -->
+  <!-- map start -->
+   <div class="max-w-3xl mx-auto px-4 py-8">
+  <!-- Heading -->
+  <h2 class="text-2xl font-semibold mb-2">Where we will meet</h2>
+  <p class="text-gray-600 mb-6">“Airbnb Auszeit” at Lollapalooza Berlin</p>
+
+  <!-- Google Map -->
+  <div class="w-full h-72 rounded-xl overflow-hidden shadow-md">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2429.998325607773!2d13.4131447!3d52.5017415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e1d93c3e7ab%3A0x17936df517b50fcb!2sOlympiastadion%20Berlin!5e0!3m2!1sen!2sde!4v1622629801623!5m2!1sen!2sde" 
+      width="100%" 
+      height="100%" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade"
+      class="w-full h-full">
+    </iframe>
+  </div>
+</div>
+<!-- map end -->
+ <!-- about me start -->
+  <div class="max-w-5xl mx-12 px-4 py-10">
+  <!-- Heading -->
+  <h2 class="text-2xl font-semibold mb-6">About me</h2>
+
+  <!-- Flex Container -->
+  <div class="flex flex-col md:flex-row md:items-start gap-8">
+    
+    <!-- Profile Card -->
+    <div class="bg-white shadow-md rounded-2xl p-6 text-center w-full md:w-1/3">
+      <img 
+        src="make up artisit img 2.avif" 
+        alt="Michael" 
+        class="w-24 h-24 mx-auto rounded-full object-cover mb-4">
+      <h3 class="text-xl font-semibold">Michael</h3>
+      <p class="text-gray-500 mb-6">Makeup artist</p>
+      <button class="w-full bg-gray-100 text-black py-2 rounded-lg font-medium hover:bg-gray-200 transition">
+        Message Michael
+      </button>
+    </div>
+
+    <!-- Text Content -->
+    <div class="md:w-2/3 text-gray-800">
+      <p>
+        I'm a makeup artist who's prepped some of the world's biggest stars, including Marion Cotillard and Kristen Stewart.
+        Join me in my exclusive Experience and express your brightest self as you explore Lollapalooza with your regular-day ticket,
+        which comes with every booking.
+        Lollapalooza ticket terms and conditions apply: <br>
+        <a href="#" class="text-black">
+         www.lollapaloozade.com/agb
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Footer Note -->
+  <p class="text-sm text-gray-500 text-center mt-6">
+    To help protect your payment, always use Airbnb to send<br> money and communicate with hosts.
+  </p>
+</div>
+  <!-- about me end -->
+   <!-- things to know start -->
+    <div class="max-w-6xl mx-auto px-4 py-10">
+  <!-- Heading -->
+  <h2 class="text-2xl font-semibold mb-8">Things to know</h2>
+
+  <!-- Grid Container -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-gray-800">
+    
+    <!-- Item 1 -->
+    <div>
+      
+      <h3 class="font-semibold">Guest requirements</h3>
+      <p class="text-gray-600">Guests ages 16 and up can attend.</p>
+    </div>
+
+    <!-- Item 2 -->
+    <div>
+      
+      <h3 class="font-semibold">Activity level</h3>
+      <p class="text-gray-600">The activity level for this experience is light and the skill level is beginner.</p>
+    </div>
+
+    <!-- Item 3 -->
+    <div>
+      
+      <h3 class="font-semibold">What to bring</h3>
+      <p class="text-gray-600">
+        Proper identification (valid government issued ID card, passport, or driver’s license) will be required upon check in for all attendees.
+      </p>
+    </div>
+
+    <!-- Item 4 -->
+    <div>
+     
+      <h3 class="font-semibold">Accessibility</h3>
+      <p class="text-gray-600">
+        Message your host for details. 
+        <a href="#" class="underline text-gray-700">Learn more</a>
+      </p>
+    </div>
+
+    <!-- Item 5 -->
+    <div>
+    
+      <h3 class="font-semibold">Cancellation policy</h3>
+      <p class="text-gray-600">
+        Cancel at least 3 days before the start time for a full refund.
+      </p>
+    </div>
+
+    <!-- Item 6 -->
+    <div>
+   
+      <h3 class="font-semibold">Pre-screening</h3>
+      <p class="text-gray-600">
+        2 guest maximum per booking. Booking guests must pass an Airbnb pre-screening to attend this experience or otherwise risk cancellation. 
+        <a href="#" class="underline text-gray-700">Learn more</a>
+      </p>
+    </div>
+
+  </div>
+</div>
+
+    <!-- things to know end -->
+     <!-- footer start -->
+      <section class="bg-[#f7f5ef] py-16 text-center px-4">
+  <!-- Feather Image -->
+  <img src="./leaf img 1.avif" class="mx-auto mb-8 w-20 h-[82px]"/>
+
+  <!-- Heading -->
+  <h2 class="text-3xl md:text-4xl font-semibold text-gray-900 leading-tight">
+    Airbnb Originals are <br class="hidden sm:block"> designed for Airbnb
+  </h2>
+
+  <!-- Paragraph -->
+  <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+    Airbnb Originals are vetted for quality and hosted by the world’s most interesting people. 
+    <a href="#" class="underline hover:text-gray-800">Learn more</a>
+  </p>
+
+  <!-- Divider -->
+  <hr class="mt-16 mb-6 border-gray-300 max-w-md mx-auto">
+
+  <!-- Footer Note -->
+  <p class="text-sm text-gray-500">
+    See an issue? 
+    <a href="#" class="underline hover:text-gray-700">Report this listing</a>
+  </p>
+</section>
+<!-- footer end -->
+</body>
+</html>

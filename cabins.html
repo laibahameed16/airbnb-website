@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Airbnb Style Hero</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-white font-sans">
+
+  <!-- Navbar start -->
+  <div class="flex justify-between items-center m-8 p-2">
+    <img src="./airbnb logo.png" alt="Airbnb" class="h-10 w-20">
+    <a href="#" class="text-gray-700 font-medium">Airbnb your place</a>
+  </div>
+ <!-- Navbar end -->
+  <!-- picture and search section start-->
+  <div class="relative flex  items-center justify-center">
+    <!-- Background Image -->
+    <img src="./cabins img.avif" 
+         alt="Kitchen" 
+         class="w-[800px] h-[500px] object-cover ml-60 rounded-xl">
+
+    <!-- Search Card -->
+    <div class="absolute top-1/2 left-20 transform -translate-y-1/2 bg-white p-8 rounded-2xl shadow-xl w-[400px]">
+      <h1 class="text-2xl font-bold mb-1 leading-tight">Cabin vacation rentals<br><span class="text-black">in United States</span></h1>
+      <p class="text-gray-500 mb-4 text-sm">Find and book unique cabins on Airbnb</p>
+
+      <!-- Location Input -->
+      <div class="mb-3">
+        <label class="block text-xs font-semibold text-gray-700 mb-1">LOCATION</label>
+        <input type="text" placeholder="United States" class="w-full border rounded-lg px-4 py-2 text-sm " />
+      </div>
+
+      <!-- Date Inputs -->
+      <div class="flex space-x-2 mb-4">
+        <div class="flex">
+          <label class="block text-xs font-semibold text-gray-700 mb-1">CHECK IN</label>
+          <input type="date" placeholder="Add Date" class="w-full border rounded-lg px-2 py-2 text-sm " />
+        </div>
+        <div class="flex">
+          <label class="block text-xs font-semibold text-gray-700 mb-1">CHECK OUT</label>
+          <input type="date" placeholder="Add Date" class="w-full border rounded-lg px-2 py-2 text-sm " />
+        </div>
+      </div>
+
+      <!-- Search Button -->
+      <button class="w-full bg-pink-600 text-white py-2 rounded-lg font-semibold text-sm hover:bg-pink-700 ">
+        Search
+      </button>
+    </div>
+  </div>
+   <!-- picture and search section end-->
+    <!-- Top-rated cabin rentals in United States start-->
+<section class="bg-white px-14 py-10">
+    <!-- Section Title -->
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-3xl font-semibold text-gray-900">
+        Top-rated cabin rentals in United States
+      </h2>
+      <p class="text-gray-500 mt-1">
+        Guests agree: these cabins are highly rated for location, cleanliness,
+        and more.
+      </p>
+
+      <!-- Grid of Listings -->
+      <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <!-- Card 1 -->
+        <div class="rounded-xl overflow-hidden shadow-sm">
+          <div class="relative">
+            <img
+              src="./top rated cabin img 1.avif"
+              alt=""
+              class="w-full h-60 object-cover"
+            />
+            <div
+              class="absolute top-2 left-2 bg-white px-3 py-1 text-sm font-medium rounded-full flex items-center gap-1"
+            >
+               Guest favorite
+            </div>
+          </div>
+          <!-- para -->
+           <div class="mt-2 px-2">
+  <div class="flex justify-between items-center">
+    <h3 class="text-md font-semibold">Cabin in Salem</h3>
+    <p class="text-sm text-gray-700 flex items-center gap-1 font-semibold">4.98 (636)</p>
+  </div>
+  <p class="text-sm text-gray-500 line-clamp-3 mt-1">
+    The “Dreamcatcher” Treehouse is a unique secluded hideaway perched
+    high above...
+  </p>
+</div>
+
+        </div>
+
+        <!-- Card 2 -->
+        <div class="rounded-xl overflow-hidden shadow-sm">
+          <div class="relative">
+            <img
+              src="./top rated cabin img 2.avif"
+              alt=""
+              class="w-full h-60 object-cover"
+            />
+            <div
+              class="absolute top-2 left-2 bg-white px-3 py-1 text-sm font-medium rounded-full"
+            >
+              Guest favorite
+            </div>
+          </div>
+          <!-- para -->
+         <div class="mt-2 px-2">
+  <div class="flex justify-between items-center">
+    <h3 class="text-md font-semibold">Cabin in Salem</h3>
+    <p class="text-sm text-gray-700 flex items-center gap-1 font-semibold">4.98 (636)</p>
+  </div>
+  <p class="text-sm text-gray-500 line-clamp-3 mt-1">
+    The “Dreamcatcher” Treehouse is a unique secluded hideaway perched
+    high above...
+  </p>
+</div>
+
+        </div>
+
+        <!-- Card 3 -->
+        <div class="rounded-xl overflow-hidden shadow-sm">
+          <div class="relative">
+            <img
+              src="./top rated cabin img 3.avif"
+              alt=""
+              class="w-full h-60 object-cover"
+            />
+            <div
+              class="absolute top-2 left-2 bg-white px-3 py-1 text-sm font-medium rounded-full flex items-center gap-1"
+            >
+               Guest favorite
+            </div>
+          </div>
+          <!-- para -->
+           <div class="mt-2 px-2">
+  <div class="flex justify-between items-center">
+    <h3 class="text-md font-semibold">Cabin in Salem</h3>
+    <p class="text-sm text-gray-700 flex items-center gap-1 font-semibold">4.98 (636)</p>
+  </div>
+  <p class="text-sm text-gray-500 line-clamp-3 mt-1">
+    The “Dreamcatcher” Treehouse is a unique secluded hideaway perched
+    high above...
+  </p>
+</div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="rounded-xl overflow-hidden shadow-sm">
+          <div class="relative">
+            <img
+              src="./top rated cabin img 4.webp"
+              alt=""
+              class="w-full h-60 object-cover"
+            />
+            <div
+              class="absolute top-2 left-2 bg-white px-3 py-1 text-sm font-medium rounded-full"
+            >
+              Guest favorite
+            </div>
+          </div>
+          <!-- para -->
+           <div class="mt-2 px-2">
+  <div class="flex justify-between items-center">
+    <h3 class="text-md font-semibold">Cabin in Salem</h3>
+    <p class="text-sm text-gray-700 flex items-center gap-1 font-semibold">4.98 (636)</p>
+  </div>
+  <p class="text-sm text-gray-500 line-clamp-3 mt-1">
+    The “Dreamcatcher” Treehouse is a unique secluded hideaway perched
+    high above...
+  </p>
+</div>
+        </div>
+      </div>
+    </div>
+</section>
+<!-- Top-rated cabin rentals in United States end -->
+     <!-- Vacation rentals for every style start-->
+<section class="bg-white px-14 py-10">
+    <!-- Section Title -->
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-3xl font-semibold text-gray-900">
+        Vacation rentals for every style
+      </h2>
+      <p class="text-gray-500 mt-1">
+        Get the amount of space that is right for you
+      </p>
+
+      <!-- Grid of Listings -->
+      <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="rounded-xl overflow-hidden shadow-sm">
+          <div class="relative">
+            <img
+              src="./top rated cabin img 1.avif"
+              alt=""
+              class="w-full h-[280px] object-cover"
+            />
+            
+          </div>
+          <!-- para -->
+           <div class="mt-2 px-2">
+  <div class="flex justify-between items-center">
+    <h3 class="text-xl font-semibold">Chalets</h3>
+    <p class="text-sm text-gray-700 flex items-center gap-1 font-semibold">4.98 (636)</p>
+  </div>
+  <p class="text-sm text-gray-500 line-clamp-3 mt-1">
+   Adventure-ready homes with apres-ski style
+  </p>
+</div>
+
+        </div>
+
+        <!-- Card 2 -->
+        <div class="rounded-xl overflow-hidden shadow-sm">
+          <div class="relative">
+            <img
+              src="./top rated cabin img 2.avif"
+              alt=""
+              class="w-full h-[280px] object-cover"
+            />
+            
+          </div>
+          <!-- para -->
+         <div class="mt-2 px-2">
+  <div class="flex justify-between items-center">
+    <h3 class="text-xl font-semibold">Villas</h3>
+    <p class="text-sm text-gray-700 flex items-center gap-1 font-semibold">4.98 (636)</p>
+  </div>
+  <p class="text-sm text-gray-500 line-clamp-3 mt-1">
+    Luxurious estates for the ultimate escape
+  </p>
+</div>
+
+        </div>
+
+        <!-- Card 3 -->
+        <div class="rounded-xl overflow-hidden shadow-sm">
+          <div class="relative">
+            <img
+              src="./top rated cabin img 3.avif"
+              alt=""
+              class="w-full h-[280px] object-cover"
+            />
+            
+          </div>
+          <!-- para -->
+           <div class="mt-2 px-2">
+  <div class="flex justify-between items-center">
+    <h3 class="text-xl font-semibold">Houses</h3>
+    <p class="text-sm text-gray-700 flex items-center gap-1 font-semibold">4.98 (636)</p>
+  </div>
+  <p class="text-sm text-gray-500 line-clamp-3 mt-1">
+    A space thats all your, with rooms for everyone
+  </p>
+</div>
+        </div>
+
+       
+        
+      </div>
+    </div>
+</section>
+<!-- Vacation rentals for every style end -->
+  <!-- Popular amenities for United States cabin rentals start-->
+<section class="bg-white px-14 py-10">
+    <!-- Section Title -->
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-3xl font-semibold text-gray-900">
+        Popular amenities for United States cabin rentals
+      </h2>
+      <!-- Grid of Listings -->
+      <div class="mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+        <!-- Card 1 -->
+       <div class="h-24 shadow rounded-2xl">
+<h1 class=" text-2xl flex mt-5 py-2 justify-center items-center font-semibold text-black">Kitchen</h1>
+       </div>
+        <!-- Card 2 -->
+        <div class="h-24 shadow rounded-2xl">
+<h1 class=" text-2xl flex mt-5 py-2 justify-center items-center font-semibold text-black">Wifi</h1>
+       </div>
+        <!-- Card 3 -->
+        <div class="h-24 shadow rounded-2xl">
+<h1 class=" text-2xl flex mt-5 py-2 justify-center items-center font-semibold text-black">Pool</h1>
+       </div>
+         <!-- Card 4 -->
+<div class="h-24 shadow rounded-2xl">
+<h1 class=" text-2xl flex py-3 px-2 justify-center items-center font-semibold text-black">Free parking on permises</h1>
+       </div>
+        <!-- Card 5 -->
+        <div class="h-24 shadow rounded-2xl">
+<h1 class=" text-2xl flex mt-5 py-2 justify-center items-center font-semibold text-black">Air conditioning</h1>
+       </div>
+      </div>
+    </div>
+</section>
+<!-- Popular amenities for United States cabin rentals end -->
+ <!-- Cabin rentals with a hot tub start -->
+  <section class="bg-white px-14 py-10">
+    <!-- Section Title -->
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-3xl font-semibold text-gray-900">
+        Cabin rentals with a hot tub
+      </h2>
+      <!-- Grid of Listings -->
+      <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <!-- Card 1 -->
+        <div class="rounded-xl overflow-hidden shadow-sm">
+          <div class="relative">
+            <img
+              src="./cabin rental with a hot tub img 1.avif"
+              alt=""
+              class="w-full h-60 object-cover"
+            />
+            <div
+              class="absolute top-2 left-2 bg-white px-3 py-1 text-sm font-medium rounded-full flex items-center gap-1"
+            >
+               Guest favorite
+            </div>
+          </div>
+          <!-- para -->
+           <div class="mt-2 px-2">
+  <div class="flex justify-between items-center">
+    <h3 class="text-md font-semibold">Cabin in Salem</h3>
+    <p class="text-sm text-gray-700 flex items-center gap-1 font-semibold">4.98 (636)</p>
+  </div>
+  <p class="text-sm text-gray-500 line-clamp-3 mt-1">
+    The “Dreamcatcher” Treehouse is a unique secluded hideaway perched
+    high above...
+  </p>
+</div>
+
+        </div>
+
+        <!-- Card 2 -->
+        <div class="rounded-xl overflow-hidden shadow-sm">
+          <div class="relative">
+            <img
+              src="./cabin rental with a hot tub img 2.avif"
+              alt=""
+              class="w-full h-60 object-cover"
+            />
+            <div
+              class="absolute top-2 left-2 bg-white px-3 py-1 text-sm font-medium rounded-full"
+            >
+              Guest favorite
+            </div>
+          </div>
+          <!-- para -->
+         <div class="mt-2 px-2">
+  <div class="flex justify-between items-center">
+    <h3 class="text-md font-semibold">Cabin in Salem</h3>
+    <p class="text-sm text-gray-700 flex items-center gap-1 font-semibold">4.98 (636)</p>
+  </div>
+  <p class="text-sm text-gray-500 line-clamp-3 mt-1">
+    The “Dreamcatcher” Treehouse is a unique secluded hideaway perched
+    high above...
+  </p>
+</div>
+
+        </div>
+
+        <!-- Card 3 -->
+        <div class="rounded-xl overflow-hidden shadow-sm">
+          <div class="relative">
+            <img
+              src="./cabin rental with a hot tub img 3.avif"
+              alt=""
+              class="w-full h-60 object-cover"
+            />
+            <div
+              class="absolute top-2 left-2 bg-white px-3 py-1 text-sm font-medium rounded-full flex items-center gap-1"
+            >
+               Guest favorite
+            </div>
+          </div>
+          <!-- para -->
+           <div class="mt-2 px-2">
+  <div class="flex justify-between items-center">
+    <h3 class="text-md font-semibold">Cabin in Salem</h3>
+    <p class="text-sm text-gray-700 flex items-center gap-1 font-semibold">4.98 (636)</p>
+  </div>
+  <p class="text-sm text-gray-500 line-clamp-3 mt-1">
+    The “Dreamcatcher” Treehouse is a unique secluded hideaway perched
+    high above...
+  </p>
+</div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="rounded-xl overflow-hidden shadow-sm">
+          <div class="relative">
+            <img
+              src="./cabin rental with a hot tub img 4.avif"
+              alt=""
+              class="w-full h-60 object-cover"
+            />
+            <div
+              class="absolute top-2 left-2 bg-white px-3 py-1 text-sm font-medium rounded-full"
+            >
+              Guest favorite
+            </div>
+          </div>
+          <!-- para -->
+           <div class="mt-2 px-2">
+  <div class="flex justify-between items-center">
+    <h3 class="text-md font-semibold">Cabin in Salem</h3>
+    <p class="text-sm text-gray-700 flex items-center gap-1 font-semibold">4.98 (636)</p>
+  </div>
+  <p class="text-sm text-gray-500 line-clamp-3 mt-1">
+    The “Dreamcatcher” Treehouse is a unique secluded hideaway perched
+    high above...
+  </p>
+</div>
+        </div>
+         <!-- Card 5 -->
+        <div class="rounded-xl overflow-hidden shadow-sm">
+          <div class="relative">
+            <img
+              src="./cabin rental with a hot tub img 5.avif"
+              alt=""
+              class="w-full h-60 object-cover"
+            />
+            <div
+              class="absolute top-2 left-2 bg-white px-3 py-1 text-sm font-medium rounded-full flex items-center gap-1"
+            >
+               Guest favorite
+            </div>
+          </div>
+          <!-- para -->
+           <div class="mt-2 px-2">
+  <div class="flex justify-between items-center">
+    <h3 class="text-md font-semibold">Cabin in Salem</h3>
+    <p class="text-sm text-gray-700 flex items-center gap-1 font-semibold">4.98 (636)</p>
+  </div>
+  <p class="text-sm text-gray-500 line-clamp-3 mt-1">
+    The “Dreamcatcher” Treehouse is a unique secluded hideaway perched
+    high above...
+  </p>
+</div>
+
+        </div>
+         <!-- Card 6 -->
+        <div class="rounded-xl overflow-hidden shadow-sm">
+          <div class="relative">
+            <img
+              src="./cabin rental with a hot tub img 6.avif"
+              alt=""
+              class="w-full h-60 object-cover"
+            />
+            <div
+              class="absolute top-2 left-2 bg-white px-3 py-1 text-sm font-medium rounded-full flex items-center gap-1"
+            >
+               Guest favorite
+            </div>
+          </div>
+          <!-- para -->
+           <div class="mt-2 px-2">
+  <div class="flex justify-between items-center">
+    <h3 class="text-md font-semibold">Cabin in Salem</h3>
+    <p class="text-sm text-gray-700 flex items-center gap-1 font-semibold">4.98 (636)</p>
+  </div>
+  <p class="text-sm text-gray-500 line-clamp-3 mt-1">
+    The “Dreamcatcher” Treehouse is a unique secluded hideaway perched
+    high above...
+  </p>
+</div>
+
+        </div>
+         <!-- Card 7 -->
+        <div class="rounded-xl overflow-hidden shadow-sm">
+          <div class="relative">
+            <img
+              src="./cabin rental with a hot tub img 7.avif"
+              alt=""
+              class="w-full h-60 object-cover"
+            />
+            <div
+              class="absolute top-2 left-2 bg-white px-3 py-1 text-sm font-medium rounded-full flex items-center gap-1"
+            >
+               Guest favorite
+            </div>
+          </div>
+          <!-- para -->
+           <div class="mt-2 px-2">
+  <div class="flex justify-between items-center">
+    <h3 class="text-md font-semibold">Cabin in Salem</h3>
+    <p class="text-sm text-gray-700 flex items-center gap-1 font-semibold">4.98 (636)</p>
+  </div>
+  <p class="text-sm text-gray-500 line-clamp-3 mt-1">
+    The “Dreamcatcher” Treehouse is a unique secluded hideaway perched
+    high above...
+  </p>
+</div>
+
+        </div>
+         <!-- Card 8 -->
+        <div class="rounded-xl overflow-hidden shadow-sm">
+          <div class="relative">
+            <img
+              src="./cabin rental with a hot tub img 8.avif"
+              alt=""
+              class="w-full h-60 object-cover"
+            />
+            <div
+              class="absolute top-2 left-2 bg-white px-3 py-1 text-sm font-medium rounded-full flex items-center gap-1"
+            >
+               Guest favorite
+            </div>
+          </div>
+          <!-- para -->
+           <div class="mt-2 px-2">
+  <div class="flex justify-between items-center">
+    <h3 class="text-md font-semibold">Cabin in Salem</h3>
+    <p class="text-sm text-gray-700 flex items-center gap-1 font-semibold">4.98 (636)</p>
+  </div>
+  <p class="text-sm text-gray-500 line-clamp-3 mt-1">
+    The “Dreamcatcher” Treehouse is a unique secluded hideaway perched
+    high above...
+  </p>
+</div>
+
+        </div>
+      </div>
+     <button class="border mt-6 border-gray-400 rounded-lg px-4 py-3 text-black font-medium flex items-center space-x-1 hover:bg-gray-100">
+  <span>Show all</span>
+  <i class="fa-solid fa-greater-than h-4 w-4 mt-1 ml-3"></i>
+</button>
+    </div>
+</section>
+<!-- Cabin rentals with a hot tub end -->
+  <!-- Pet-friendly cabin rentals start -->
+  <section class="bg-white px-14 py-10">
+    <!-- Section Title -->
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-3xl font-semibold text-gray-900">
+       Pet-friendly cabin rentals
+      </h2>
+      <!-- Grid of Listings -->
+      <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <!-- Card 1 -->
+        <div class="rounded-xl overflow-hidden shadow-sm">
+          <div class="relative">
+            <img
+              src="./Pet-friendly cabin rentals img 1.avif"
+              alt=""
+              class="w-full h-60 object-cover"
+            />
+            <div
+              class="absolute top-2 left-2 bg-white px-3 py-1 text-sm font-medium rounded-full flex items-center gap-1"
+            >
+               Guest favorite
+            </div>
+          </div>
+          <!-- para -->
+           <div class="mt-2 px-2">
+  <div class="flex justify-between items-center">
+    <h3 class="text-md font-semibold">Cabin in Salem</h3>
+    <p class="text-sm text-gray-700 flex items-center gap-1 font-semibold">4.98 (636)</p>
+  </div>
+  <p class="text-sm text-gray-500 line-clamp-3 mt-1">
+    The “Dreamcatcher” Treehouse is a unique secluded hideaway perched
+    high above...
+  </p>
+</div>
+
+        </div>
+
+        <!-- Card 2 -->
+        <div class="rounded-xl overflow-hidden shadow-sm">
+          <div class="relative">
+            <img
+              src="./Pet-friendly cabin rentals img 2.avif"
+              alt=""
+              class="w-full h-60 object-cover"
+            />
+            <div
+              class="absolute top-2 left-2 bg-white px-3 py-1 text-sm font-medium rounded-full"
+            >
+              Guest favorite
+            </div>
+          </div>
+          <!-- para -->
+         <div class="mt-2 px-2">
+  <div class="flex justify-between items-center">
+    <h3 class="text-md font-semibold">Cabin in Salem</h3>
+    <p class="text-sm text-gray-700 flex items-center gap-1 font-semibold">4.98 (636)</p>
+  </div>
+  <p class="text-sm text-gray-500 line-clamp-3 mt-1">
+    The “Dreamcatcher” Treehouse is a unique secluded hideaway perched
+    high above...
+  </p>
+</div>
+
+        </div>
+
+        <!-- Card 3 -->
+        <div class="rounded-xl overflow-hidden shadow-sm">
+          <div class="relative">
+            <img
+              src="./Pet-friendly cabin rentals img 3.avif"
+              alt=""
+              class="w-full h-60 object-cover"
+            />
+            <div
+              class="absolute top-2 left-2 bg-white px-3 py-1 text-sm font-medium rounded-full flex items-center gap-1"
+            >
+               Guest favorite
+            </div>
+          </div>
+          <!-- para -->
+           <div class="mt-2 px-2">
+  <div class="flex justify-between items-center">
+    <h3 class="text-md font-semibold">Cabin in Salem</h3>
+    <p class="text-sm text-gray-700 flex items-center gap-1 font-semibold">4.98 (636)</p>
+  </div>
+  <p class="text-sm text-gray-500 line-clamp-3 mt-1">
+    The “Dreamcatcher” Treehouse is a unique secluded hideaway perched
+    high above...
+  </p>
+</div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="rounded-xl overflow-hidden shadow-sm">
+          <div class="relative">
+            <img
+              src="./Pet-friendly cabin rentals img 4.avif"
+              alt=""
+              class="w-full h-60 object-cover"
+            />
+            <div
+              class="absolute top-2 left-2 bg-white px-3 py-1 text-sm font-medium rounded-full"
+            >
+              Guest favorite
+            </div>
+          </div>
+          <!-- para -->
+           <div class="mt-2 px-2">
+  <div class="flex justify-between items-center">
+    <h3 class="text-md font-semibold">Cabin in Salem</h3>
+    <p class="text-sm text-gray-700 flex items-center gap-1 font-semibold">4.98 (636)</p>
+  </div>
+  <p class="text-sm text-gray-500 line-clamp-3 mt-1">
+    The “Dreamcatcher” Treehouse is a unique secluded hideaway perched
+    high above...
+  </p>
+</div>
+        </div>
+         <!-- Card 5 -->
+        <div class="rounded-xl overflow-hidden shadow-sm">
+          <div class="relative">
+            <img
+              src="./Pet-friendly cabin rentals img 5.avif"
+              alt=""
+              class="w-full h-60 object-cover"
+            />
+            <div
+              class="absolute top-2 left-2 bg-white px-3 py-1 text-sm font-medium rounded-full flex items-center gap-1"
+            >
+               Guest favorite
+            </div>
+          </div>
+          <!-- para -->
+           <div class="mt-2 px-2">
+  <div class="flex justify-between items-center">
+    <h3 class="text-md font-semibold">Cabin in Salem</h3>
+    <p class="text-sm text-gray-700 flex items-center gap-1 font-semibold">4.98 (636)</p>
+  </div>
+  <p class="text-sm text-gray-500 line-clamp-3 mt-1">
+    The “Dreamcatcher” Treehouse is a unique secluded hideaway perched
+    high above...
+  </p>
+</div>
+
+        </div>
+         <!-- Card 6 -->
+        <div class="rounded-xl overflow-hidden shadow-sm">
+          <div class="relative">
+            <img
+              src="./Pet-friendly cabin rentals img 6.avif"
+              alt=""
+              class="w-full h-60 object-cover"
+            />
+            <div
+              class="absolute top-2 left-2 bg-white px-3 py-1 text-sm font-medium rounded-full flex items-center gap-1"
+            >
+               Guest favorite
+            </div>
+          </div>
+          <!-- para -->
+           <div class="mt-2 px-2">
+  <div class="flex justify-between items-center">
+    <h3 class="text-md font-semibold">Cabin in Salem</h3>
+    <p class="text-sm text-gray-700 flex items-center gap-1 font-semibold">4.98 (636)</p>
+  </div>
+  <p class="text-sm text-gray-500 line-clamp-3 mt-1">
+    The “Dreamcatcher” Treehouse is a unique secluded hideaway perched
+    high above...
+  </p>
+</div>
+
+        </div>
+         <!-- Card 7 -->
+        <div class="rounded-xl overflow-hidden shadow-sm">
+          <div class="relative">
+            <img
+              src="./Pet-friendly cabin rentals img 7.avif"
+              alt=""
+              class="w-full h-60 object-cover"
+            />
+            <div
+              class="absolute top-2 left-2 bg-white px-3 py-1 text-sm font-medium rounded-full flex items-center gap-1"
+            >
+               Guest favorite
+            </div>
+          </div>
+          <!-- para -->
+           <div class="mt-2 px-2">
+  <div class="flex justify-between items-center">
+    <h3 class="text-md font-semibold">Cabin in Salem</h3>
+    <p class="text-sm text-gray-700 flex items-center gap-1 font-semibold">4.98 (636)</p>
+  </div>
+  <p class="text-sm text-gray-500 line-clamp-3 mt-1">
+    The “Dreamcatcher” Treehouse is a unique secluded hideaway perched
+    high above...
+  </p>
+</div>
+
+        </div>
+         <!-- Card 8 -->
+        <div class="rounded-xl overflow-hidden shadow-sm">
+          <div class="relative">
+            <img
+              src="./Pet-friendly cabin rentals img 8.avif"
+              alt=""
+              class="w-full h-60 object-cover"
+            />
+            <div
+              class="absolute top-2 left-2 bg-white px-3 py-1 text-sm font-medium rounded-full flex items-center gap-1"
+            >
+               Guest favorite
+            </div>
+          </div>
+          <!-- para -->
+           <div class="mt-2 px-2">
+  <div class="flex justify-between items-center">
+    <h3 class="text-md font-semibold">Cabin in Salem</h3>
+    <p class="text-sm text-gray-700 flex items-center gap-1 font-semibold">4.98 (636)</p>
+  </div>
+  <p class="text-sm text-gray-500 line-clamp-3 mt-1">
+    The “Dreamcatcher” Treehouse is a unique secluded hideaway perched
+    high above...
+  </p>
+</div>
+
+        </div>
+      </div>
+     <button class="border mt-6 border-gray-400 rounded-lg px-4 py-3 text-black font-medium flex items-center space-x-1 hover:bg-gray-100">
+  <span>Show all</span>
+  <i class="fa-solid fa-greater-than h-4 w-4 mt-1 ml-3"></i>
+</button>
+    </div>
+</section>
+<!-- Pet-friendly cabin rentals end -->
+  <!-- Private cabin rentals start -->
+  <section class="bg-white px-14 py-10">
+    <!-- Section Title -->
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-3xl font-semibold text-gray-900">
+        Private cabin rentals
+      </h2>
+      <!-- Grid of Listings -->
+      <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <!-- Card 1 -->
+        <div class="rounded-xl overflow-hidden shadow-sm">
+          <div class="relative">
+            <img
+              src="./Private cabin rentals img 1.avif"
+              alt=""
+              class="w-full h-60 object-cover"
+            />
+            <div
+              class="absolute top-2 left-2 bg-white px-3 py-1 text-sm font-medium rounded-full flex items-center gap-1"
+            >
+               Guest favorite
+            </div>
+          </div>
+          <!-- para -->
+           <div class="mt-2 px-2">
+  <div class="flex justify-between items-center">
+    <h3 class="text-md font-semibold">Cabin in Salem</h3>
+    <p class="text-sm text-gray-700 flex items-center gap-1 font-semibold">4.98 (636)</p>
+  </div>
+  <p class="text-sm text-gray-500 line-clamp-3 mt-1">
+    The “Dreamcatcher” Treehouse is a unique secluded hideaway perched
+    high above...
+  </p>
+</div>
+
+        </div>
+
+        <!-- Card 2 -->
+        <div class="rounded-xl overflow-hidden shadow-sm">
+          <div class="relative">
+            <img
+              src="./Private cabin rentals img 2.avif"
+              alt=""
+              class="w-full h-60 object-cover"
+            />
+            <div
+              class="absolute top-2 left-2 bg-white px-3 py-1 text-sm font-medium rounded-full"
+            >
+              Guest favorite
+            </div>
+          </div>
+          <!-- para -->
+         <div class="mt-2 px-2">
+  <div class="flex justify-between items-center">
+    <h3 class="text-md font-semibold">Cabin in Salem</h3>
+    <p class="text-sm text-gray-700 flex items-center gap-1 font-semibold">4.98 (636)</p>
+  </div>
+  <p class="text-sm text-gray-500 line-clamp-3 mt-1">
+    The “Dreamcatcher” Treehouse is a unique secluded hideaway perched
+    high above...
+  </p>
+</div>
+
+        </div>
+
+        <!-- Card 3 -->
+        <div class="rounded-xl overflow-hidden shadow-sm">
+          <div class="relative">
+            <img
+              src="./Private cabin rentals img 3.avif"
+              alt=""
+              class="w-full h-60 object-cover"
+            />
+            <div
+              class="absolute top-2 left-2 bg-white px-3 py-1 text-sm font-medium rounded-full flex items-center gap-1"
+            >
+               Guest favorite
+            </div>
+          </div>
+          <!-- para -->
+           <div class="mt-2 px-2">
+  <div class="flex justify-between items-center">
+    <h3 class="text-md font-semibold">Cabin in Salem</h3>
+    <p class="text-sm text-gray-700 flex items-center gap-1 font-semibold">4.98 (636)</p>
+  </div>
+  <p class="text-sm text-gray-500 line-clamp-3 mt-1">
+    The “Dreamcatcher” Treehouse is a unique secluded hideaway perched
+    high above...
+  </p>
+</div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="rounded-xl overflow-hidden shadow-sm">
+          <div class="relative">
+            <img
+              src="./Private cabin rentals img 4.avif"
+              alt=""
+              class="w-full h-60 object-cover"
+            />
+            <div
+              class="absolute top-2 left-2 bg-white px-3 py-1 text-sm font-medium rounded-full"
+            >
+              Guest favorite
+            </div>
+          </div>
+          <!-- para -->
+           <div class="mt-2 px-2">
+  <div class="flex justify-between items-center">
+    <h3 class="text-md font-semibold">Cabin in Salem</h3>
+    <p class="text-sm text-gray-700 flex items-center gap-1 font-semibold">4.98 (636)</p>
+  </div>
+  <p class="text-sm text-gray-500 line-clamp-3 mt-1">
+    The “Dreamcatcher” Treehouse is a unique secluded hideaway perched
+    high above...
+  </p>
+</div>
+        </div>
+         <!-- Card 5 -->
+        <div class="rounded-xl overflow-hidden shadow-sm">
+          <div class="relative">
+            <img
+              src="./Private cabin rentals img 5.avif"
+              alt=""
+              class="w-full h-60 object-cover"
+            />
+            <div
+              class="absolute top-2 left-2 bg-white px-3 py-1 text-sm font-medium rounded-full flex items-center gap-1"
+            >
+               Guest favorite
+            </div>
+          </div>
+          <!-- para -->
+           <div class="mt-2 px-2">
+  <div class="flex justify-between items-center">
+    <h3 class="text-md font-semibold">Cabin in Salem</h3>
+    <p class="text-sm text-gray-700 flex items-center gap-1 font-semibold">4.98 (636)</p>
+  </div>
+  <p class="text-sm text-gray-500 line-clamp-3 mt-1">
+    The “Dreamcatcher” Treehouse is a unique secluded hideaway perched
+    high above...
+  </p>
+</div>
+
+        </div>
+         <!-- Card 6 -->
+        <div class="rounded-xl overflow-hidden shadow-sm">
+          <div class="relative">
+            <img
+              src="./Private cabin rentals img 6.avif"
+              alt=""
+              class="w-full h-60 object-cover"
+            />
+            <div
+              class="absolute top-2 left-2 bg-white px-3 py-1 text-sm font-medium rounded-full flex items-center gap-1"
+            >
+               Guest favorite
+            </div>
+          </div>
+          <!-- para -->
+           <div class="mt-2 px-2">
+  <div class="flex justify-between items-center">
+    <h3 class="text-md font-semibold">Cabin in Salem</h3>
+    <p class="text-sm text-gray-700 flex items-center gap-1 font-semibold">4.98 (636)</p>
+  </div>
+  <p class="text-sm text-gray-500 line-clamp-3 mt-1">
+    The “Dreamcatcher” Treehouse is a unique secluded hideaway perched
+    high above...
+  </p>
+</div>
+
+        </div>
+         <!-- Card 7 -->
+        <div class="rounded-xl overflow-hidden shadow-sm">
+          <div class="relative">
+            <img
+              src="./Private cabin rentals img 7.avif"
+              alt=""
+              class="w-full h-60 object-cover"
+            />
+            <div
+              class="absolute top-2 left-2 bg-white px-3 py-1 text-sm font-medium rounded-full flex items-center gap-1"
+            >
+               Guest favorite
+            </div>
+          </div>
+          <!-- para -->
+           <div class="mt-2 px-2">
+  <div class="flex justify-between items-center">
+    <h3 class="text-md font-semibold">Cabin in Salem</h3>
+    <p class="text-sm text-gray-700 flex items-center gap-1 font-semibold">4.98 (636)</p>
+  </div>
+  <p class="text-sm text-gray-500 line-clamp-3 mt-1">
+    The “Dreamcatcher” Treehouse is a unique secluded hideaway perched
+    high above...
+  </p>
+</div>
+
+        </div>
+         <!-- Card 8 -->
+        <div class="rounded-xl overflow-hidden shadow-sm">
+          <div class="relative">
+            <img
+              src="./Private cabin rentals img 8.avif"
+              alt=""
+              class="w-full h-60 object-cover"
+            />
+            <div
+              class="absolute top-2 left-2 bg-white px-3 py-1 text-sm font-medium rounded-full flex items-center gap-1"
+            >
+               Guest favorite
+            </div>
+          </div>
+          <!-- para -->
+           <div class="mt-2 px-2">
+  <div class="flex justify-between items-center">
+    <h3 class="text-md font-semibold">Cabin in Salem</h3>
+    <p class="text-sm text-gray-700 flex items-center gap-1 font-semibold">4.98 (636)</p>
+  </div>
+  <p class="text-sm text-gray-500 line-clamp-3 mt-1">
+    The “Dreamcatcher” Treehouse is a unique secluded hideaway perched
+    high above...
+  </p>
+</div>
+
+        </div>
+      </div>
+     <button class="border mt-6 border-gray-400 rounded-lg px-4 py-3 text-black font-medium flex items-center space-x-1 hover:bg-gray-100">
+  <span>Show all</span>
+  <i class="fa-solid fa-greater-than h-4 w-4 mt-1 ml-3"></i>
+</button>
+    </div>
+</section>
+<!-- Private cabin rentals end -->
+  <!-- Destinations to explore start -->
+ <section class="bg-gray-100 px-10 py-10">
+  <!-- Heading -->
+  <h2 class="text-2xl font-semibold mb-6">Destinations to explore</h2>
+
+  <!-- buttons -->
+  <div class="flex flex-wrap gap-6 border-b border-gray-300 pb-3 mb-6 text-sm font-medium">
+    <button class="text-gray-600 hover:text-black hover:underline">Other types of stays</button>
+    <button class="text-gray-600 hover:text-black hover:underline">Unique stays</button>
+    <button class="text-gray-600 hover:text-black hover:underline">Things to do</button>
+    <button class="text-gray-600 hover:text-black hover:underline">Travel tips & inspiration</button>
+  </div>
+
+  <!-- Grid -->
+  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-y-6 text-sm">
+    <div>
+      <h3 class="font-semibold">Hostel rents</h3>
+      <p class="text-gray-500">United States</p>
+    </div>
+    <div>
+      <h3 class="font-semibold">Smoking-friendly rentals</h3>
+      <p class="text-gray-500">United States</p>
+    </div>
+    <div>
+      <h3 class="font-semibold">Rentals with beach access</h3>
+      <p class="text-gray-500">United States</p>
+    </div>
+    <div>
+      <h3 class="font-semibold">Rentals with fire pit</h3>
+      <p class="text-gray-500">United States</p>
+    </div>
+    <div>
+      <h3 class="font-semibold">Campsite rentals</h3>
+      <p class="text-gray-500">United States</p>
+    </div>
+    <div>
+      <h3 class="font-semibold">Rentals with an accessible height</h3>
+      <p class="text-gray-500">United States</p>
+    </div>
+    <div>
+      <h3 class="font-semibold">Lighthouse rentals</h3>
+      <p class="text-gray-500">United States</p>
+    </div>
+    <div>
+      <h3 class="font-semibold">Rentals with a sauna</h3>
+      <p class="text-gray-500">United States</p>
+    </div>
+    <div>
+      <h3 class="font-semibold">Guesthouse rentals</h3>
+      <p class="text-gray-500">United Kingdom</p>
+    </div>
+    <div>
+      <h3 class="font-semibold">Restore Rentals</h3>
+      <p class="text-gray-500">United States</p>
+    </div>
+    <div>
+      <h3 class="font-semibold">Farmstay Rentals</h3>
+      <p class="text-gray-500">United States</p>
+    </div>
+    <div>
+      <h3 class="font-semibold">Ski-in/ski-out rentals</h3>
+      <p class="text-gray-500">United States</p>
+    </div>
+    <div>
+      <h3 class="font-semibold">Farm Cottages</h3>
+      <p class="text-gray-500">United Kingdom</p>
+    </div>
+    <div>
+      <h3 class="font-semibold">Cabin Rentals</h3>
+      <p class="text-gray-500">Australia</p>
+    </div>
+    <div>
+      <h3 class="font-semibold">Luxury Cabins</h3>
+      <p class="text-gray-500">United Kingdom</p>
+    </div>
+    <div>
+      
+    </div>
+  </div>
+  
+</section>
+ <!-- Destinations to explore end -->
+   <!-- Footer start-->
+  <div class="border-t border-gray-300 py-5 text-center text-xs px-4">
+    <p class="mb-2">
+      @ 2025 Airbnb, Inc.  
+      <a href="#" class="hover:underline">Terms.</a>  
+      <a href="#" class="hover:underline">Sitemap.</a>  
+      <a href="#" class="hover:underline">Privacy.</a>  
+      <a href="#" class="hover:underline">Your Privacy Choices.</a>
+    </p>
+  </div>
+  <!-- Footer end-->
+    </body>
+</html>

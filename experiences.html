@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Navbar start -->
+<header class="bg-white shadow-md  top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-20">
+      
+      <!-- Logo -->
+      <div class="flex items-center space-x-4">
+        <img src="./airbnb logo.png" alt="Airbnb" class="h-12 w-24">
+      </div>
+
+      <!-- Nav Links -->
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="#" class="flex flex-col items-center group relative">
+          <img src="./home logo of navbar.png" class="w-6 h-6" />
+          <span class="text-sm font-medium text-black group-hover:text-black">Homes</span>
+          <span class="absolute -bottom-1 w-11 h-[2px] bg-black rounded-full group-hover:bg-black"></span>
+        </a>
+
+        <a href="#" class="flex flex-col items-center group relative">
+          <div class="relative">
+            <img src="./experiences logo of navbar.png" class="w-8 h-8" />
+            <span class="absolute -top-2 -right-2 bg-gray-500 text-white text-[10px] px-1 rounded-full">NEW</span>
+          </div>
+          <span class="text-sm font-medium text-gray-500 group-hover:text-black">Experiences</span>
+          <span class="absolute -bottom-1 w-16 h-[2px] bg-black  group-hover:bg-black"></span>
+        </a>
+
+        <a href="#" class="flex flex-col items-center group relative">
+          <div class="relative">
+            <img src="https://img.icons8.com/emoji/32/bellhop-bell.png" class="w-6 h-6" />
+            <span class="absolute -top-2 -right-2 bg-gray-500 text-white text-[10px] px-1 rounded-full">NEW</span>
+          </div>
+          <span class="text-sm font-medium text-gray-500 group-hover:text-black">Services</span>
+          <span class="absolute -bottom-1 w-12 h-[2px] bg-black  group-hover:bg-black"></span>
+        </a>
+      </nav>
+
+      <!-- Right Controls -->
+      <div class="flex items-center gap-4">
+        <a href="#" class="text-sm font-medium hover:bg-gray-100 px-3 py-2 rounded-full hidden md:block">Become a host</a>
+        <button class="p-2 bg-gray-100 rounded-full hover:bg-gray-200">
+          <svg class="w-5 h-5 text-gray-600" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm3.89 11.06a6 6 0 01-7.78 0 1 1 0 011.2-1.6 4 4 0 005.38 0 1 1 0 011.2 1.6zM10 10a2 2 0 110-4 2 2 0 010 4z" /></svg>
+        </button>
+        <button class="p-2 bg-gray-100 rounded-full hover:bg-gray-200">
+          <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Search Bar -->
+  <div class="px-72  justify-center py-7">
+    <div class="bg-white border-2 rounded-full  shadow-md flex items-center px-12 py-4 space-x-4 w-full ">
+      <div class="text-left px-4 border-r">
+        <p class="text-xs font-bold">Where</p>
+        <p class="text-sm text-gray-500">Search destinations</p>
+      </div>
+      <div class="text-left px-4 border-r">
+        <p class="text-xs font-bold">Check in</p>
+        <p class="text-sm text-gray-500">Add dates</p>
+      </div>
+      <div class="text-left px-4 border-r">
+        <p class="text-xs font-bold">Check out</p>
+        <p class="text-sm text-gray-500">Add dates</p>
+      </div>
+      <div class="text-left px-4">
+        <p class="text-xs font-bold">Who</p>
+        <p class="text-sm text-gray-500">Add guests</p>
+      </div>
+      <button class="bg-rose-500 text-white p-2 w-10 rounded-full hover:bg-rose-600">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        
+      </button>
+    </div>
+  </div>
+</header>
+<!-- navbar end -->
+ <!-- airbnb originals start -->
+ <section class="px-10 py-10">
+  <!-- Title + Arrows -->
+ <div class="flex justify-between items-center mb-5">
+  <!-- Title + icon together -->
+  <div class="flex items-center gap-3">
+    <h2 class="text-2xl font-bold">Airbnb Originals</h2>
+    <i class="fa-solid fa-right-from-bracket text-xl text-black mt-2"></i>
+  </div>
+
+  <!-- Arrows -->
+  <div class="flex gap-2">
+    <!-- Left Arrow -->
+    <button id="prevBtn" class="p-2 bg-white border rounded-full shadow hover:shadow-md disabled:opacity-30">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+    </button>
+    <!-- Right Arrow -->
+    <button id="nextBtn" class="p-2 bg-white border rounded-full shadow hover:shadow-md">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+    </button>
+  </div>
+</div>
+
+
+  <!-- Cards Container -->
+  <div id="cardSlider" class="flex gap-4 overflow-x-auto scrollbar-hidden">
+
+    <!-- Card 1 -->
+    <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./experience airbnb originals img 1.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+       <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Original</span>
+        <!-- share -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+        <i class="fa-solid fa-arrow-up-from-bracket"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <a href="./airbnb originals of experience.html"><h3 class="text-[13px] font-medium">Stylish vintage car photo </h3></a>
+        <h3 class="text-[13px] font-medium">Shoot Tour </h3>
+        <p class="text-[12px] text-gray-600">Rome,Italy</p>
+        <p class="text-[12px] text-gray-600">From $67/guest • ★ 4.95</p>
+
+      </div>
+    </div>
+
+    
+
+    <!-- Card 2 -->
+   <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./experience airbnb originals img 2.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+       <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Original</span>
+        <!-- share -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-solid fa-arrow-up-from-bracket"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-[13px] font-medium">Photo session at the </h3>
+         <h3 class="text-[11px] font-medium">Metropolitan Museum of Art</h3>
+         <p class="text-[12px] text-gray-600">New York, United States</p>
+        <p class="text-[12px] text-gray-600">From $300/guest • ★ 5.0</p>
+
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+   <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./experience airbnb originals img 3.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Original</span>
+       
+        <!-- share -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+        <i class="fa-solid fa-arrow-up-from-bracket"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-[13px] font-medium">Sunny French Riviera photo</h3>
+         <h3 class="text-[13px] font-medium">sessions by Claire</h3>
+         <p class="text-[12px] text-gray-600">Canners, France</p>
+        <p class="text-[12px] text-gray-600">From $106 / guest</p>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./experience airbnb originals img 4.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Popular</span>
+        <!-- share -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+        <i class="fa-solid fa-arrow-up-from-bracket"></i>
+        </button>
+      </div>
+      <!-- Text -->
+       <div class="p-3">
+        <h3 class="text-[13px] font-medium">Aerial and ground</h3>
+         <h3 class="text-[13px] font-medium">photography by Daniel</h3>
+         <p class="text-[12px] text-gray-600">Canners, France</p>
+        <p class="text-[12px] text-gray-600">From $106 / guest</p>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+  <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./experience airbnb originals img 5.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Original</span>
+        <!-- share -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+       <i class="fa-solid fa-arrow-up-from-bracket"></i>
+        </button>
+      </div>
+      <!-- Text -->
+       <div class="p-3">
+        <h3 class="text-[13px] font-medium">Neapolitan memories</h3>
+         <h3 class="text-[13px] font-medium">of Giovanni</h3>
+         <p class="text-[12px] text-gray-600">Canners, France</p>
+        <p class="text-[12px] text-gray-600">From $106 / guest</p>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+   <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./experience airbnb originals img 6.webp" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Original</span>
+        <!-- share -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-solid fa-arrow-up-from-bracket"></i>
+        </button>
+      </div>
+      <!-- Text -->
+       <div class="p-3">
+        <h3 class="text-[13px] font-medium">Authentic, inclusive</h3>
+         <h3 class="text-[13px] font-medium">photography by Ashley</h3>
+         <p class="text-[12px] text-gray-600">Canners, France</p>
+        <p class="text-[12px] text-gray-600">From $106 / guest</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- airbnb originals end -->
+  <!-- Experiences in Dubai start -->
+ <section class="px-10 py-10">
+    <h1 class="font-bold text-3xl">Popular with travelers from your area</h1>
+  <!-- Title + Arrows -->
+ <div class="flex justify-between items-center mb-5">
+  <!-- Title + icon together -->
+
+  <div class="flex items-center gap-3 mt-2">
+    
+    <h2 class="text-2xl font-bold">Experiences in Dubai</h2>
+    <i class="fa-solid fa-right-from-bracket text-xl text-black mt-2"></i>
+  </div>
+
+  <!-- Arrows -->
+  <div class="flex gap-2">
+    <!-- Left Arrow -->
+    <button id="prevBtn" class="p-2 bg-white border rounded-full shadow hover:shadow-md disabled:opacity-30">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+    </button>
+    <!-- Right Arrow -->
+    <button id="nextBtn" class="p-2 bg-white border rounded-full shadow hover:shadow-md">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+    </button>
+  </div>
+</div>
+
+
+  <!-- Cards Container -->
+  <div id="cardSlider" class="flex gap-4 overflow-x-auto scrollbar-hidden">
+
+    <!-- Card 1 -->
+    <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./Experiences in Dubai img 1.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+       <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Popular</span>
+       <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-[13px] font-medium">Stylish vintage car photo </h3>
+        <h3 class="text-[13px] font-medium">Shoot Tour </h3>
+        <p class="text-[12px] text-gray-600">Rome,Italy</p>
+        <p class="text-[12px] text-gray-600">From $67/guest • ★ 4.95</p>
+
+      </div>
+    </div>
+
+    
+
+    <!-- Card 2 -->
+   <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./Experiences in Dubai img 2.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+       <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Popular</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-[13px] font-medium">Photo session at the </h3>
+         <h3 class="text-[11px] font-medium">Metropolitan Museum of Art</h3>
+         <p class="text-[12px] text-gray-600">New York, United States</p>
+        <p class="text-[12px] text-gray-600">From $300/guest • ★ 5.0</p>
+
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+   <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./Experiences in Dubai img 3.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Popular</span>
+       
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-[13px] font-medium">Sunny French Riviera photo</h3>
+         <h3 class="text-[13px] font-medium">sessions by Claire</h3>
+         <p class="text-[12px] text-gray-600">Canners, France</p>
+        <p class="text-[12px] text-gray-600">From $106 / guest</p>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./Experiences in Dubai img 4.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Popular</span>
+       <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+       <div class="p-3">
+        <h3 class="text-[13px] font-medium">Aerial and ground</h3>
+         <h3 class="text-[13px] font-medium">photography by Daniel</h3>
+         <p class="text-[12px] text-gray-600">Canners, France</p>
+        <p class="text-[12px] text-gray-600">From $106 / guest</p>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+  <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./Experiences in Dubai img 5.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Popular</span>
+       <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+       <div class="p-3">
+        <h3 class="text-[13px] font-medium">Neapolitan memories</h3>
+         <h3 class="text-[13px] font-medium">of Giovanni</h3>
+         <p class="text-[12px] text-gray-600">Canners, France</p>
+        <p class="text-[12px] text-gray-600">From $106 / guest</p>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+   <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./Experiences in Dubai img 6.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Popular</span>
+       <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+       <div class="p-3">
+        <h3 class="text-[13px] font-medium">Authentic, inclusive</h3>
+         <h3 class="text-[13px] font-medium">photography by Ashley</h3>
+         <p class="text-[12px] text-gray-600">Canners, France</p>
+        <p class="text-[12px] text-gray-600">From $106 / guest</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- Experiences in Dubai end -->
+   <!-- Experiences in london start -->
+ <section class="px-10 py-10">
+    
+  <!-- Title + Arrows -->
+ <div class="flex justify-between items-center mb-5">
+  <!-- Title + icon together -->
+
+  <div class="flex items-center gap-3 ">
+    
+    <h2 class="text-2xl font-bold">Experiences in London</h2>
+    <i class="fa-solid fa-right-from-bracket text-xl text-black mt-2"></i>
+  </div>
+
+  <!-- Arrows -->
+  <div class="flex gap-2">
+    <!-- Left Arrow -->
+    <button id="prevBtn" class="p-2 bg-white border rounded-full shadow hover:shadow-md disabled:opacity-30">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+    </button>
+    <!-- Right Arrow -->
+    <button id="nextBtn" class="p-2 bg-white border rounded-full shadow hover:shadow-md">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+    </button>
+  </div>
+</div>
+
+
+  <!-- Cards Container -->
+  <div id="cardSlider" class="flex gap-4 overflow-x-auto scrollbar-hidden">
+
+    <!-- Card 1 -->
+    <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./london img 1.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+       <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Popular</span>
+       <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-[13px] font-medium">Stylish vintage car photo </h3>
+        <h3 class="text-[13px] font-medium">Shoot Tour </h3>
+        <p class="text-[12px] text-gray-600">Rome,Italy</p>
+        <p class="text-[12px] text-gray-600">From $67/guest • ★ 4.95</p>
+
+      </div>
+    </div>
+
+    
+
+    <!-- Card 2 -->
+   <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./london img 2.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+       <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Popular</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-[13px] font-medium">Photo session at the </h3>
+         <h3 class="text-[11px] font-medium">Metropolitan Museum of Art</h3>
+         <p class="text-[12px] text-gray-600">New York, United States</p>
+        <p class="text-[12px] text-gray-600">From $300/guest • ★ 5.0</p>
+
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+   <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./london img 3.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Popular</span>
+       
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-[13px] font-medium">Sunny French Riviera photo</h3>
+         <h3 class="text-[13px] font-medium">sessions by Claire</h3>
+         <p class="text-[12px] text-gray-600">Canners, France</p>
+        <p class="text-[12px] text-gray-600">From $106 / guest</p>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./london img 4.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Popular</span>
+       <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+       <div class="p-3">
+        <h3 class="text-[13px] font-medium">Aerial and ground</h3>
+         <h3 class="text-[13px] font-medium">photography by Daniel</h3>
+         <p class="text-[12px] text-gray-600">Canners, France</p>
+        <p class="text-[12px] text-gray-600">From $106 / guest</p>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+  <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./london img 5.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Popular</span>
+       <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+       <div class="p-3">
+        <h3 class="text-[13px] font-medium">Neapolitan memories</h3>
+         <h3 class="text-[13px] font-medium">of Giovanni</h3>
+         <p class="text-[12px] text-gray-600">Canners, France</p>
+        <p class="text-[12px] text-gray-600">From $106 / guest</p>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+   <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./london img 6.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Popular</span>
+       <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+       <div class="p-3">
+        <h3 class="text-[13px] font-medium">Authentic, inclusive</h3>
+         <h3 class="text-[13px] font-medium">photography by Ashley</h3>
+         <p class="text-[12px] text-gray-600">Canners, France</p>
+        <p class="text-[12px] text-gray-600">From $106 / guest</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- Experiences in london end -->
+   <!-- Experiences in kuala lampur start -->
+ <section class="px-10 py-10">
+    
+  <!-- Title + Arrows -->
+ <div class="flex justify-between items-center mb-5">
+  <!-- Title + icon together -->
+
+  <div class="flex items-center gap-3 ">
+    
+    <h2 class="text-2xl font-bold">Experiences in Kuala Lampur</h2>
+    <i class="fa-solid fa-right-from-bracket text-xl text-black mt-2"></i>
+  </div>
+
+  <!-- Arrows -->
+  <div class="flex gap-2">
+    <!-- Left Arrow -->
+    <button id="prevBtn" class="p-2 bg-white border rounded-full shadow hover:shadow-md disabled:opacity-30">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+    </button>
+    <!-- Right Arrow -->
+    <button id="nextBtn" class="p-2 bg-white border rounded-full shadow hover:shadow-md">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+    </button>
+  </div>
+</div>
+
+
+  <!-- Cards Container -->
+  <div id="cardSlider" class="flex gap-4 overflow-x-auto scrollbar-hidden">
+
+    <!-- Card 1 -->
+    <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./kuala lampur img 1.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+       <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Popular</span>
+       <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-[13px] font-medium">Stylish vintage car photo </h3>
+        <h3 class="text-[13px] font-medium">Shoot Tour </h3>
+        <p class="text-[12px] text-gray-600">Rome,Italy</p>
+        <p class="text-[12px] text-gray-600">From $67/guest • ★ 4.95</p>
+
+      </div>
+    </div>
+
+    
+
+    <!-- Card 2 -->
+   <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./kuala lampur img 2.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+       <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Popular</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-[13px] font-medium">Photo session at the </h3>
+         <h3 class="text-[11px] font-medium">Metropolitan Museum of Art</h3>
+         <p class="text-[12px] text-gray-600">New York, United States</p>
+        <p class="text-[12px] text-gray-600">From $300/guest • ★ 5.0</p>
+
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+   <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./kuala lampur img 3.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Popular</span>
+       
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-[13px] font-medium">Sunny French Riviera photo</h3>
+         <h3 class="text-[13px] font-medium">sessions by Claire</h3>
+         <p class="text-[12px] text-gray-600">Canners, France</p>
+        <p class="text-[12px] text-gray-600">From $106 / guest</p>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./kuala lampur img 4.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Popular</span>
+       <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+       <div class="p-3">
+        <h3 class="text-[13px] font-medium">Aerial and ground</h3>
+         <h3 class="text-[13px] font-medium">photography by Daniel</h3>
+         <p class="text-[12px] text-gray-600">Canners, France</p>
+        <p class="text-[12px] text-gray-600">From $106 / guest</p>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+  <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./kuala lampur img 5.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Popular</span>
+       <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+       <div class="p-3">
+        <h3 class="text-[13px] font-medium">Neapolitan memories</h3>
+         <h3 class="text-[13px] font-medium">of Giovanni</h3>
+         <p class="text-[12px] text-gray-600">Canners, France</p>
+        <p class="text-[12px] text-gray-600">From $106 / guest</p>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+   <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./kuala lampur img 6.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Popular</span>
+       <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+       <div class="p-3">
+        <h3 class="text-[13px] font-medium">Authentic, inclusive</h3>
+         <h3 class="text-[13px] font-medium">photography by Ashley</h3>
+         <p class="text-[12px] text-gray-600">Canners, France</p>
+        <p class="text-[12px] text-gray-600">From $106 / guest</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- Experiences in kuala lampur end -->
+  <!-- Experiences in paris start -->
+ <section class="px-10 py-10">
+    
+  <!-- Title + Arrows -->
+ <div class="flex justify-between items-center mb-5">
+  <!-- Title + icon together -->
+
+  <div class="flex items-center gap-3 ">
+    
+    <h2 class="text-2xl font-bold">Experiences in Paris</h2>
+    <i class="fa-solid fa-right-from-bracket text-xl text-black mt-2"></i>
+  </div>
+
+  <!-- Arrows -->
+  <div class="flex gap-2">
+    <!-- Left Arrow -->
+    <button id="prevBtn" class="p-2 bg-white border rounded-full shadow hover:shadow-md disabled:opacity-30">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+    </button>
+    <!-- Right Arrow -->
+    <button id="nextBtn" class="p-2 bg-white border rounded-full shadow hover:shadow-md">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+    </button>
+  </div>
+</div>
+
+
+  <!-- Cards Container -->
+  <div id="cardSlider" class="flex gap-4 overflow-x-auto scrollbar-hidden">
+
+    <!-- Card 1 -->
+    <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./paris img 1.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+       <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Popular</span>
+       <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-[13px] font-medium">Stylish vintage car photo </h3>
+        <h3 class="text-[13px] font-medium">Shoot Tour </h3>
+        <p class="text-[12px] text-gray-600">Rome,Italy</p>
+        <p class="text-[12px] text-gray-600">From $67/guest • ★ 4.95</p>
+
+      </div>
+    </div>
+
+    
+
+    <!-- Card 2 -->
+   <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./paris img 2.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+       <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Popular</span>
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-[13px] font-medium">Photo session at the </h3>
+         <h3 class="text-[11px] font-medium">Metropolitan Museum of Art</h3>
+         <p class="text-[12px] text-gray-600">New York, United States</p>
+        <p class="text-[12px] text-gray-600">From $300/guest • ★ 5.0</p>
+
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+   <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./paris img 3.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Popular</span>
+       
+        <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+      <div class="p-3">
+        <h3 class="text-[13px] font-medium">Sunny French Riviera photo</h3>
+         <h3 class="text-[13px] font-medium">sessions by Claire</h3>
+         <p class="text-[12px] text-gray-600">Canners, France</p>
+        <p class="text-[12px] text-gray-600">From $106 / guest</p>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./paris img 4.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Popular</span>
+       <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+       <div class="p-3">
+        <h3 class="text-[13px] font-medium">Aerial and ground</h3>
+         <h3 class="text-[13px] font-medium">photography by Daniel</h3>
+         <p class="text-[12px] text-gray-600">Canners, France</p>
+        <p class="text-[12px] text-gray-600">From $106 / guest</p>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+  <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./paris img 5.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Popular</span>
+       <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+       <div class="p-3">
+        <h3 class="text-[13px] font-medium">Neapolitan memories</h3>
+         <h3 class="text-[13px] font-medium">of Giovanni</h3>
+         <p class="text-[12px] text-gray-600">Canners, France</p>
+        <p class="text-[12px] text-gray-600">From $106 / guest</p>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+   <div class="min-w-[180px] max-w-[200px] bg-white rounded-2xl shadow-sm overflow-hidden">
+      <!-- Image Box -->
+      <div class="relative h-[160px] rounded-2xl bg-gray-200">
+         <!-- Image -->
+    <img src="./paris img 6.avif" alt="Apartment Image"
+         class="w-full h-full object-cover rounded-2xl" />
+        <!-- Badge -->
+        <span class="absolute top-2 left-2 bg-white text-xs font-medium px-2 py-1 rounded-full ">Popular</span>
+       <!-- Heart -->
+        <button class="absolute top-2 right-2 text-white hover:text-red-800  rounded-full p-1 bg-transparent">
+         <i class="fa-regular fa-heart h-4 w-6"></i>
+        </button>
+      </div>
+      <!-- Text -->
+       <div class="p-3">
+        <h3 class="text-[13px] font-medium">Authentic, inclusive</h3>
+         <h3 class="text-[13px] font-medium">photography by Ashley</h3>
+         <p class="text-[12px] text-gray-600">Canners, France</p>
+        <p class="text-[12px] text-gray-600">From $106 / guest</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- Experiences in paris end -->
+ <!-- Inspiration for future getaways start -->
+ <section class="bg-gray-100 px-10 py-10">
+  <!-- Heading -->
+  <h2 class="text-2xl font-semibold mb-6">Inspiration for future getaways</h2>
+
+  <!-- buttons -->
+  <div class="flex flex-wrap gap-6 border-b border-gray-300 pb-3 mb-6 text-sm font-medium">
+    <button class="text-gray-600 hover:text-black hover:underline">Other types of stays</button>
+    <button class="text-gray-600 hover:text-black hover:underline">Unique stays</button>
+    <button class="text-gray-600 hover:text-black hover:underline">Things to do</button>
+    <button class="text-gray-600 hover:text-black hover:underline">Travel tips & inspiration</button>
+  </div>
+
+  <!-- Grid -->
+  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-y-6 text-sm">
+    <div>
+      <h3 class="font-semibold">Hostel rents</h3>
+      <p class="text-gray-500">United States</p>
+    </div>
+    <div>
+      <h3 class="font-semibold">Smoking-friendly rentals</h3>
+      <p class="text-gray-500">United States</p>
+    </div>
+    <div>
+      <h3 class="font-semibold">Rentals with beach access</h3>
+      <p class="text-gray-500">United States</p>
+    </div>
+    <div>
+      <h3 class="font-semibold">Rentals with fire pit</h3>
+      <p class="text-gray-500">United States</p>
+    </div>
+    <div>
+      <h3 class="font-semibold">Campsite rentals</h3>
+      <p class="text-gray-500">United States</p>
+    </div>
+    <div>
+      <h3 class="font-semibold">Rentals with an accessible height</h3>
+      <p class="text-gray-500">United States</p>
+    </div>
+    <div>
+      <h3 class="font-semibold">Lighthouse rentals</h3>
+      <p class="text-gray-500">United States</p>
+    </div>
+    <div>
+      <h3 class="font-semibold">Rentals with a sauna</h3>
+      <p class="text-gray-500">United States</p>
+    </div>
+    <div>
+      <h3 class="font-semibold">Guesthouse rentals</h3>
+      <p class="text-gray-500">United Kingdom</p>
+    </div>
+    <div>
+      <h3 class="font-semibold">Restore Rentals</h3>
+      <p class="text-gray-500">United States</p>
+    </div>
+    <div>
+      <h3 class="font-semibold">Farmstay Rentals</h3>
+      <p class="text-gray-500">United States</p>
+    </div>
+    <div>
+      <h3 class="font-semibold">Ski-in/ski-out rentals</h3>
+      <p class="text-gray-500">United States</p>
+    </div>
+    <div>
+      <h3 class="font-semibold">Farm Cottages</h3>
+      <p class="text-gray-500">United Kingdom</p>
+    </div>
+    <div>
+      <h3 class="font-semibold">Cabin Rentals</h3>
+      <p class="text-gray-500">Australia</p>
+    </div>
+    <div>
+      <h3 class="font-semibold">Luxury Cabins</h3>
+      <p class="text-gray-500">United Kingdom</p>
+    </div>
+    <div>
+      
+    </div>
+  </div>
+  
+</section>
+ <!-- Inspiration for future getaways end -->
+  <!-- footer start -->
+<footer class="bg-gray-100 text-sm px-10 text-gray-800">
+  <div class="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+    
+    <!-- Support Section -->
+    <div>
+      <h4 class="font-semibold mb-4">Support</h4>
+      <ul class="space-y-2">
+        <li><a href="./help center.html" class="hover:underline">Help Center</a></li>
+        <li><span class="text-gray-500">AirCover</span></li>
+        <li><a href="#" class="hover:underline">Anti-discrimination</a></li>
+        <li><a href="#" class="hover:underline">Disability support</a></li>
+        <li><a href="#" class="hover:underline">Cancellation options</a></li>
+        <li><a href="#" class="hover:underline">Report neighborhood concern</a></li>
+      </ul>
+    </div>
+
+    <!-- Hosting Section -->
+    <div>
+      <h4 class="font-semibold mb-4">Hosting</h4>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:underline">Airbnb your home</a></li>
+        <li><a href="#" class="hover:underline">Airbnb your experience</a></li>
+        <li><a href="#" class="hover:underline">Airbnb your service</a></li>
+        <li><a href="#" class="hover:underline">AirCover for Hosts</a></li>
+        <li><a href="#" class="hover:underline">Hosting resources</a></li>
+        <li><a href="#" class="hover:underline">Community forum</a></li>
+        <li><a href="#" class="hover:underline">Hosting responsibly</a></li>
+        <li><a href="#" class="hover:underline">Airbnb-friendly apartments</a></li>
+        <li><a href="#" class="hover:underline">Join a free Hosting class</a></li>
+        <li><a href="#" class="hover:underline">Find a co-host</a></li>
+      </ul>
+    </div>
+
+    <!-- Airbnb Section -->
+    <div>
+      <h4 class="font-semibold mb-4">Airbnb</h4>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:underline">2025 Summer Release</a></li>
+        <li><a href="#" class="hover:underline">Newsroom</a></li>
+        <li><a href="#" class="hover:underline">Careers</a></li>
+        <li><a href="#" class="hover:underline">Investors</a></li>
+        <li><a href="#" class="hover:underline">Gift cards</a></li>
+        <li><a href="#" class="hover:underline">Airbnb.org emergency stays</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bottom Footer -->
+  <div class="border-t border-gray-300 py-5 text-center text-xs px-4">
+    <p class="mb-2">
+      @ 2025 Airbnb, Inc.  
+      <a href="#" class="hover:underline">Terms.</a>  
+      <a href="#" class="hover:underline">Sitemap.</a>  
+      <a href="#" class="hover:underline">Privacy.</a>  
+      <a href="#" class="hover:underline">Your Privacy Choices.</a>
+    </p>
+  </div>
+</footer>
+<!-- footer end -->
+</body>
+</html>
